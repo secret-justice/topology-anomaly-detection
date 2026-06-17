@@ -1,0 +1,114 @@
+======================================================================
+FINAL REFERENCE QUALITY AUDIT REPORT
+FCS Paper: Hybrid Intelligence for Topology Anomaly Detection
+======================================================================
+
+Total entries: 63
+Q1-Top journals: 46
+Top conferences: 8
+OK (standards/books): 5
+Borderline: 4
+
+Q1-Top rate: 54/63 (86%)
+Acceptable rate: 59/63 (94%)
+
+======================================================================
+Q1 JOURNALS (46)
+======================================================================
+  [2026] gnn_bddi_se2026: Journal of Modern Power Systems and Clean Energy doi=10.35833/MPCE.2025.000235
+  [2026] hassouna_grl_survey2026: Energy and AI doi=10.1016/j.egyai.2025.100671
+  [2026] digital_twin_gat2026: Nature Communications doi=10.1038/s41467-026-58303-4
+  [2026] sarker_ai_review2026: Artificial Intelligence Review doi=10.1007/s10462-025-11429-x
+  [2026] debelle_mssvdd2026: Scientific Reports doi=10.1038/s41598-026-46799-x
+  [2026] mpgrid_topo2026: Applied Energy doi=10.1016/j.apenergy.2026.126152
+  [2026] xai_cps2026: Computer Networks doi=10.1016/j.comnet.2026.112320
+  [2025] wei_pltgnn2025: Energy and AI doi=10.1016/j.egyai.2025.100593
+  [2025] multisource_outage2025: IEEE Transactions on Smart Grid doi=10.1109/TSG.2025.3540979
+  [2025] zhang_topo_imbalanced2025: IEEE Transactions on Smart Grid doi=10.1109/TSG.2025.3541000
+  [2025] meta_pigat_dsse2025: IEEE Transactions on Network Science and Engineering doi=10.1109/TNSE.2025.3528962
+  [2025] lopez_opf_pitgnn2025: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2024.3396987
+  [2025] wavelet_gat_topo2025: IEEE Transactions on Smart Grid doi=10.1109/TSG.2024.3439218
+  [2025] timeseries_anomaly_smartgrid2025: Neurocomputing doi=10.1016/j.neucom.2025.131967
+  [2025] garcia_wavelet_topo2025: IEEE Transactions on Smart Grid doi=10.1109/TSG.2024.3466891
+  [2025] egat2025: IEEE Transactions on Smart Grid doi=10.1109/TSG.2024.3473892
+  [2025] hybrid_gnn_lse2025: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2024.3455201
+  [2025] xgnn_fault2025: IEEE Transactions on Smart Grid doi=10.1109/TSG.2024.3488221
+  [2025] expert_gnn_kg2025: Expert Systems with Applications doi=10.1016/j.eswa.2025.126300
+  [2024] physics_informed_gnn_se2023: Applied Energy doi=10.1016/j.apenergy.2023.122602
+  [2024] spatiotemporal_gnn_se2024: IEEE Internet of Things Journal doi=10.1109/JIOT.2024.3350927
+  [2024] li_topo_deep_nn2024: IEEE Transactions on Smart Grid doi=10.1109/TSG.2023.3278702
+  [2024] gao_pg_gcn_opf2024: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2023.3238377
+  [2024] xu_bayesian_gan2024: IEEE Transactions on Smart Grid doi=10.1109/TSG.2023.3338026
+  [2024] tensor_scada2023: IEEE Transactions on Smart Grid doi=10.1109/TSG.2023.3329812
+  [2024] zhou_dynamic_se_cyber2024: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2023.3298743
+  [2024] zhang_graph_anomaly_tii2024: IEEE Transactions on Industrial Informatics doi=10.1109/TII.2023.3347000
+  [2024] gnn_nature_review2024: Nature Reviews Electrical Engineering doi=10.1038/s44287-024-00076-z
+  [2024] topo_overview2024: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2023.3329871
+  [2023] asefi_anomaly_se2023: IEEE Transactions on Smart Grid doi=10.1109/TSG.2023.3269178
+  [2022] baldi2022tutorial: IEEE Transactions on Industrial Informatics doi=10.1109/TII.2022.3177366
+  [2022] learning_grid_topologies2022: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2021.3132744
+  [2022] topo_error_neu2021: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2021.3107892
+  [2021] wu2021comprehensive: IEEE Transactions on Neural Networks and Learning Systems doi=10.1109/TNNLS.2020.2978386
+  [2021] karimi_topo_se2021: IEEE Transactions on Smart Grid doi=10.1109/TSG.2021.3102179
+  [2021] donon_gcnn_se2021: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2021.3071860
+  [2021] nlav_topo2021: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2021.3063138
+  [2018] pandapower2018: IEEE Transactions on Power Systems doi=10.1109/TPWRS.2018.2829021
+  [2013] cim2013energy: IEEE Power and Energy Magazine doi=10.1109/MPE.2013.2277999
+  [2000] wls_gauss_newton: IEEE Transactions on Power Systems doi=10.1109/59.819846
+  [1996] chi2_test_se: IEEE Transactions on Power Systems doi=10.1109/59.486114
+  [1991] lav1991state: IEEE Transactions on Power Systems doi=10.1109/59.114562
+  [1991] ieee13bus1991: IEEE Transactions on Power Systems doi=10.1109/59.119106
+  [1985] normalized_residual: IEEE Transactions on Power Apparatus and Systems doi=10.1109/TPAS.1985.319044
+  [1970] wls1970state: IEEE Transactions on Power Apparatus and Systems doi=10.1109/TPAS.1970.292683
+  [1964] huber1964robust: The Annals of Mathematical Statistics doi=10.1214/aoms/1177703732
+
+======================================================================
+TOP CONFERENCES (8)
+======================================================================
+  [2025] kclnet2026: Machine Learning and Knowledge Discovery in Databases: Applied Data Science Track doi=10.1007/978-3-031-70371-3_6
+  [2024] powergraph_benchmark2024: Advances in Neural Information Processing Systems (NeurIPS) doi=10.5555/3692070.3692217
+  [2024] jobe_lstm_gin2024: Proceedings of the AAAI Conference on Artificial Intelligence doi=10.1609/aaai.v38i21.30457
+  [2019] donon_gnn_pf2019: IEEE International Conference on Smart Grid Technologies
+  [2017] hamilton2017inductive: Advances in Neural Information Processing Systems doi=10.5555/3295222.3295340
+  [2017] kipf2017semi: International Conference on Learning Representations (ICLR) doi=10.5555/3305381.3305455
+  [2017] shap_lundberg2017: Advances in Neural Information Processing Systems doi=10.5555/3294996.3295213
+  [2008] isolation_forest2008: Proceedings of the IEEE International Conference on Data Mining (ICDM) doi=10.1109/ICDM.2008.17
+
+======================================================================
+STANDARDS/BOOKS (5)
+======================================================================
+  [2004] abur2004power: book
+  [2020] simbench2020: misc
+  [2014] cigre_mv2014: techreport
+  [2023] dimitrovski2023cim: book
+  [2014] wood2014power: book
+
+======================================================================
+BORDERLINE (4)
+======================================================================
+  [2010] ieee_8500_node: IEEE Power and Energy Society
+  [2008] louvain2008: Journal of Statistical Mechanics: Theory and Experiment doi=10.1088/1742-5468/2008/10/P10008
+  [2004] rdf_w3c: W3C Recommendation
+  [2024] tpgse2025: IET Smart Grid doi=10.1049/stg2.12168
+
+======================================================================
+ADDITIONAL CHECKS
+======================================================================
+Year range: 1964 - 2026
+Recent (2020+): 43/63 (68%)
+Citation consistency: 63 cited keys, 63 bib keys
+Missing in bib: None
+Uncited in bib: None
+Duplicate DOIs: None
+'and others' entries: 1 (sarker_ai_review2026)
+Placeholders in tex: 8 (L23, L24, L25, L27, L28, L30, L1228, L1242)
+
+======================================================================
+VERDICT
+======================================================================
+Reference quality: PASS (54/63 Q1-Top)
+BibTeX errors: 0
+LaTeX errors: 0
+Undefined references: 0
+Duplicate DOIs: 0
+Pages: 19

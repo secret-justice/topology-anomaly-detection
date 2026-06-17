@@ -1,0 +1,223 @@
+{
+  "ground_truth_mode": {
+    "n_trials": 3,
+    "total_ground_truth": 15,
+    "total_detected": 38,
+    "total_matched": 10,
+    "total_false_alarms": 28,
+    "precision": 0.2631578947368421,
+    "recall": 0.6666666666666666,
+    "f1": 0.3773584905660377,
+    "per_type": {
+      "图模不符": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "拓扑中断": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "虚拟接/错接": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "遥测!=拓扑": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 5,
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857
+      },
+      "虚接/错接": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "signal_mismatch": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "model_mismatch": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "virtual_faulty": {
+        "tp": 0,
+        "fp": 20,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "topo_interrupt": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "avg_time_s": 0.36656006177266437
+  },
+  "no_gt_mode": {
+    "anomalies": [
+      {
+        "type": "model_mismatch",
+        "location": "CIM独有70个设备",
+        "confidence": 0.85,
+        "severity": "medium",
+        "details": "CIM中有70个设备在SVG中缺失",
+        "layer": "Rule"
+      },
+      {
+        "type": "model_mismatch",
+        "location": "SVG独有33个设备",
+        "confidence": 0.85,
+        "severity": "medium",
+        "details": "SVG中有33个设备在CIM中缺失",
+        "layer": "Rule"
+      },
+      {
+        "type": "virtual_faulty",
+        "severity": "medium",
+        "description": "节点 12 电压偏离 (0.919), 可能虚接/错接",
+        "evidence": {
+          "bus": 12,
+          "vm_pu": 0.9186301110782776,
+          "deviation": 0.0303,
+          "mean": 0.9489,
+          "std": 0.0297
+        },
+        "rule": "virtual_connection_voltage"
+      },
+      {
+        "type": "virtual_faulty",
+        "severity": "medium",
+        "description": "节点 14 电压偏离 (0.919), 可能虚接/错接",
+        "evidence": {
+          "bus": 14,
+          "vm_pu": 0.9191563459460418,
+          "deviation": 0.0297,
+          "mean": 0.9489,
+          "std": 0.0297
+        },
+        "rule": "virtual_connection_voltage"
+      },
+      {
+        "type": "virtual_faulty",
+        "severity": "medium",
+        "description": "节点 16 电压偏离 (0.911), 可能虚接/错接",
+        "evidence": {
+          "bus": 16,
+          "vm_pu": 0.9111363354127393,
+          "deviation": 0.0378,
+          "mean": 0.9489,
+          "std": 0.0297
+        },
+        "rule": "virtual_connection_voltage"
+      },
+      {
+        "type": "virtual_faulty",
+        "severity": "medium",
+        "description": "节点 17 电压偏离 (0.916), 可能虚接/错接",
+        "evidence": {
+          "bus": 17,
+          "vm_pu": 0.9161703793987142,
+          "deviation": 0.0327,
+          "mean": 0.9489,
+          "std": 0.0297
+        },
+        "rule": "virtual_connection_voltage"
+      },
+      {
+        "type": "virtual_faulty",
+        "severity": "medium",
+        "description": "节点 29 电压偏离 (0.918), 可能虚接/错接",
+        "evidence": {
+          "bus": 29,
+          "vm_pu": 0.9176209052934683,
+          "deviation": 0.0313,
+          "mean": 0.9489,
+          "std": 0.0297
+        },
+        "rule": "virtual_connection_voltage"
+      },
+      {
+        "type": "virtual_faulty",
+        "severity": "medium",
+        "description": "节点 30 电压偏离 (0.909), 可能虚接/错接",
+        "evidence": {
+          "bus": 30,
+          "vm_pu": 0.9093745413815116,
+          "deviation": 0.0395,
+          "mean": 0.9489,
+          "std": 0.0297
+        },
+        "rule": "virtual_connection_voltage"
+      },
+      {
+        "type": "virtual_faulty",
+        "severity": "medium",
+        "description": "节点 31 电压偏离 (0.918), 可能虚接/错接",
+        "evidence": {
+          "bus": 31,
+          "vm_pu": 0.9176872342452084,
+          "deviation": 0.0312,
+          "mean": 0.9489,
+          "std": 0.0297
+        },
+        "rule": "virtual_connection_voltage"
+      }
+    ],
+    "summary": {
+      "total_anomalies": 9,
+      "by_type": {
+        "model_mismatch": 2,
+        "virtual_faulty": 7
+      },
+      "by_severity": {
+        "medium": 9
+      },
+      "confidence_mean": 0.18888888888888888,
+      "confidence_max": 0.85,
+      "confidence_min": 0.0
+    },
+    "data_quality": {
+      "issues": [],
+      "scores": {
+        "pf_converged": 1.0,
+        "n_voltage_meas": 33,
+        "n_power_meas": 74,
+        "connected": 1.0
+      },
+      "overall": "GOOD"
+    },
+    "elapsed": 0.755702018737793,
+    "network_name": "case33bw"
+  }
+}

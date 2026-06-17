@@ -1,0 +1,152 @@
+[
+  {
+    "name": "China_10kV_CitySuburban",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_10kV_CityUrban",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_10kV_Rural",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "china_10kv_typical_network",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_CBD_Commercial",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_Data_Center",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_Hospital_District",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_Industrial_Park",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_Large_110_10kV_DER",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_New_Energy_Park",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_Residential_High",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_Rural_Overhead",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_Suburban_Mixed",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_Township",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  },
+  {
+    "name": "China_University_Campus",
+    "n_bus": 7,
+    "n_line": 7,
+    "n_trafo": 7,
+    "n_load": 7,
+    "n_gen": 7,
+    "n_sgen": 7,
+    "n_switch": 7
+  }
+]

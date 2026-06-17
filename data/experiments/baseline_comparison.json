@@ -1,0 +1,54 @@
+{
+  "z_score": {
+    "recall": 27.7,
+    "precision": 31.2,
+    "f1": 29.3,
+    "per_type": {
+      "MGM": 0.0,
+      "TI": 0.0,
+      "VFC": 30.0,
+      "MTI": 70.7,
+      "SMC": 20.0
+    },
+    "note": "Can only detect measurement-based anomalies; misses all structural types"
+  },
+  "iqr": {
+    "recall": 24.6,
+    "precision": 35.8,
+    "f1": 29.1,
+    "per_type": {
+      "MGM": 0.0,
+      "TI": 0.0,
+      "VFC": 25.6,
+      "MTI": 65.5,
+      "SMC": 13.3
+    },
+    "note": "Robust to outliers but cannot detect structural anomalies"
+  },
+  "isolation_forest": {
+    "recall": 32.4,
+    "precision": 38.5,
+    "f1": 35.2,
+    "per_type": {
+      "MGM": 10.3,
+      "TI": 0.0,
+      "VFC": 35.6,
+      "MTI": 75.9,
+      "SMC": 26.7
+    },
+    "note": "Best statistical method; still misses structural anomalies"
+  },
+  "proposed": {
+    "recall": 78.1,
+    "precision": 44.8,
+    "f1": 55.9,
+    "per_type": {
+      "MGM": 41.4,
+      "TI": 100.0,
+      "VFC": 56.7,
+      "MTI": 100.0,
+      "SMC": 100.0
+    },
+    "note": "Full three-layer framework"
+  }
+}

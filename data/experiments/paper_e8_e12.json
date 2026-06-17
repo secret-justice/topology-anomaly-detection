@@ -1,0 +1,180 @@
+{
+  "e8_correction": {
+    "results": [
+      {
+        "net": "case33bw",
+        "bus": 33,
+        "j_clean": 0.1171,
+        "j_anomaly": NaN,
+        "j_corrected": 0.1171,
+        "reduction": NaN,
+        "recovery_pct": NaN
+      },
+      {
+        "net": "case118",
+        "bus": 118,
+        "j_clean": 0.0869,
+        "j_anomaly": NaN,
+        "j_corrected": 0.0869,
+        "reduction": NaN,
+        "recovery_pct": NaN
+      },
+      {
+        "net": "illinois200",
+        "bus": 200,
+        "j_clean": 0.121,
+        "j_anomaly": NaN,
+        "j_corrected": 0.121,
+        "reduction": NaN,
+        "recovery_pct": NaN
+      }
+    ]
+  },
+  "e9_gnn": {
+    "models": {
+      "gnn_model_best.pt": {
+        "size_kb": 126.6,
+        "keys": [
+          "model_state_dict",
+          "model_type",
+          "num_classes",
+          "hidden_channels",
+          "in_channels",
+          "val_acc",
+          "anomaly_recall",
+          "epoch"
+        ],
+        "epoch": 0,
+        "val_acc": 0.44466403162055335,
+        "anomaly_recall": 0.032679738562091505
+      },
+      "gnn_model_final.pt": {
+        "size_kb": 26.2,
+        "keys": [
+          "model_state_dict",
+          "in_channels",
+          "hidden_channels",
+          "out_channels"
+        ]
+      },
+      "gnn_gae_model.pt": {
+        "size_kb": 314.6,
+        "keys": [
+          "model_state_dict",
+          "threshold",
+          "in_dim",
+          "normal_mean",
+          "normal_cov_inv",
+          "version"
+        ]
+      }
+    },
+    "error": "too many values to unpack (expected 2)"
+  },
+  "e12_confusion": {
+    "per_type": {
+      "topo_interrupt": {
+        "hit": 90,
+        "inj": 91
+      },
+      "virtual_faulty": {
+        "hit": 109,
+        "inj": 117
+      },
+      "model_mismatch": {
+        "hit": 0,
+        "inj": 38
+      },
+      "telemetry_mismatch": {
+        "hit": 68,
+        "inj": 76
+      },
+      "signal_mismatch": {
+        "hit": 1,
+        "inj": 18
+      },
+      "measurement_outlier": {
+        "hit": 33,
+        "inj": 78
+      },
+      "stale_data": {
+        "hit": 67,
+        "inj": 72
+      },
+      "parameter_error": {
+        "hit": 47,
+        "inj": 77
+      },
+      "load_shift": {
+        "hit": 58,
+        "inj": 76
+      },
+      "reverse_power_flow": {
+        "hit": 104,
+        "inj": 152
+      },
+      "communication_loss": {
+        "hit": 0,
+        "inj": 104
+      },
+      "voltage_collapse": {
+        "hit": 9,
+        "inj": 106
+      },
+      "ghost_topology": {
+        "hit": 0,
+        "inj": 59
+      },
+      "duplicate_measurement": {
+        "hit": 0,
+        "inj": 74
+      },
+      "protection_misconfig": {
+        "hit": 45,
+        "inj": 77
+      },
+      "trafo_tap_fault": {
+        "hit": 30,
+        "inj": 56
+      },
+      "grounding_fault": {
+        "hit": 78,
+        "inj": 78
+      },
+      "clock_drift": {
+        "hit": 36,
+        "inj": 36
+      },
+      "harmonic_pollution": {
+        "hit": 0,
+        "inj": 74
+      },
+      "impedance_degradation": {
+        "hit": 1,
+        "inj": 114
+      },
+      "dg_intermittent": {
+        "hit": 0,
+        "inj": 51
+      },
+      "measurement_bias": {
+        "hit": 8,
+        "inj": 35
+      },
+      "branch_contingency": {
+        "hit": 0,
+        "inj": 114
+      },
+      "topo_obfuscation": {
+        "hit": 57,
+        "inj": 74
+      },
+      "voltage_regulation": {
+        "hit": 43,
+        "inj": 43
+      }
+    },
+    "core_recall": 0.7882,
+    "extended_recall": 0.3974
+  }
+}

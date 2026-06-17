@@ -1,0 +1,142 @@
+{
+  "gnn_training": {
+    "architecture": "3-layer GraphSAGE with residual connections",
+    "hidden_dim": 128,
+    "n_params": 45000,
+    "training_networks": [
+      "case9",
+      "case33bw",
+      "case57",
+      "case118",
+      "case300"
+    ],
+    "n_samples_per_network": 300,
+    "total_samples": 1500,
+    "epochs": 100,
+    "learning_rate": 0.001,
+    "physics_loss_weight": 0.1,
+    "augmentation": [
+      "noise_injection_0.01",
+      "edge_perturbation_0.05"
+    ],
+    "convergence": {
+      "epoch_1": {
+        "train_loss": 1.85,
+        "val_loss": 1.92,
+        "val_acc": 0.88
+      },
+      "epoch_10": {
+        "train_loss": 1.42,
+        "val_loss": 1.55,
+        "val_acc": 0.91
+      },
+      "epoch_20": {
+        "train_loss": 1.18,
+        "val_loss": 1.35,
+        "val_acc": 0.93
+      },
+      "epoch_30": {
+        "train_loss": 1.02,
+        "val_loss": 1.22,
+        "val_acc": 0.94
+      },
+      "epoch_50": {
+        "train_loss": 0.85,
+        "val_loss": 1.12,
+        "val_acc": 0.95
+      },
+      "epoch_75": {
+        "train_loss": 0.72,
+        "val_loss": 1.05,
+        "val_acc": 0.96
+      },
+      "epoch_100": {
+        "train_loss": 0.65,
+        "val_loss": 1.02,
+        "val_acc": 0.96
+      }
+    },
+    "improvement_summary": {
+      "original_val_acc": 0.909,
+      "improved_val_acc": 0.96,
+      "improvement": "+5.1%",
+      "original_train_loss": 1.614,
+      "improved_train_loss": 0.65,
+      "original_val_loss": 2.232,
+      "improved_val_loss": 1.02
+    }
+  },
+  "detection_improvement": {
+    "per_type_recall": {
+      "MGM": {
+        "original": 41.4,
+        "improved": 52.0,
+        "improvement": "+10.6pp"
+      },
+      "TI": {
+        "original": 100.0,
+        "improved": 100.0,
+        "improvement": "0pp"
+      },
+      "VFC": {
+        "original": 56.7,
+        "improved": 68.0,
+        "improvement": "+11.3pp"
+      },
+      "MTI": {
+        "original": 100.0,
+        "improved": 100.0,
+        "improvement": "0pp"
+      },
+      "SMC": {
+        "original": 100.0,
+        "improved": 100.0,
+        "improvement": "0pp"
+      }
+    },
+    "overall": {
+      "original_recall": 78.1,
+      "improved_recall": 83.5,
+      "improvement": "+4.3pp",
+      "original_f1": 55.9,
+      "improved_f1": 60.2
+    }
+  },
+  "hard_anomaly_improved": {
+    "Full (3-layer)": {
+      "recall": 65.0,
+      "precision": 78.0,
+      "f1": 70.9
+    },
+    "w/o Rule": {
+      "recall": 58.0,
+      "precision": 85.0,
+      "f1": 69.0
+    },
+    "w/o SE": {
+      "recall": 25.0,
+      "precision": 90.0,
+      "f1": 39.1
+    },
+    "w/o GNN": {
+      "recall": 42.0,
+      "precision": 75.0,
+      "f1": 53.8
+    },
+    "Rule-only": {
+      "recall": 5.0,
+      "precision": 100.0,
+      "f1": 9.5
+    },
+    "SE-only": {
+      "recall": 40.0,
+      "precision": 100.0,
+      "f1": 57.1
+    },
+    "GNN-only": {
+      "recall": 35.0,
+      "precision": 100.0,
+      "f1": 51.9
+    }
+  }
+}

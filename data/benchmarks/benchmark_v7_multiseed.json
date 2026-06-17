@@ -1,0 +1,7270 @@
+{
+  "42": {
+    "results": [
+      {
+        "net": "case4gs",
+        "desc": "4-node",
+        "status": "OK",
+        "bus": 4,
+        "line": 4,
+        "time": 8.54,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 0,
+        "det_total": 8,
+        "recall": 1.0,
+        "precision": 0.75,
+        "f1": 0.8571428571428571,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case5",
+        "desc": "5-node",
+        "status": "OK",
+        "bus": 5,
+        "line": 6,
+        "time": 0.66,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 10,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case6ww",
+        "desc": "6-node",
+        "status": "OK",
+        "bus": 6,
+        "line": 11,
+        "time": 0.56,
+        "gt_count": 6,
+        "det_rule": 9,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 11,
+        "recall": 1.0,
+        "precision": 0.5454545454545454,
+        "f1": 0.7058823529411764,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case9",
+        "desc": "9-node",
+        "status": "OK",
+        "bus": 9,
+        "line": 9,
+        "time": 0.54,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case14",
+        "desc": "IEEE14",
+        "status": "OK",
+        "bus": 14,
+        "line": 15,
+        "time": 0.65,
+        "gt_count": 6,
+        "det_rule": 9,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 11,
+        "recall": 1.0,
+        "precision": 0.5454545454545454,
+        "f1": 0.7058823529411764,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_simple",
+        "desc": "Example7",
+        "status": "OK",
+        "bus": 7,
+        "line": 4,
+        "time": 0.32,
+        "gt_count": 10,
+        "det_rule": 11,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 3,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_mv",
+        "desc": "CIGRE-MV",
+        "status": "OK",
+        "bus": 15,
+        "line": 15,
+        "time": 0.58,
+        "gt_count": 9,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 2,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 12,
+        "recall": 1.0,
+        "precision": 0.75,
+        "f1": 0.8571428571428571,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f1",
+        "desc": "Kerber-OH1",
+        "status": "OK",
+        "bus": 15,
+        "line": 13,
+        "time": 0.45,
+        "gt_count": 9,
+        "det_rule": 12,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.6428571428571429,
+        "f1": 0.782608695652174,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f2",
+        "desc": "Kerber-OH2",
+        "status": "OK",
+        "bus": 10,
+        "line": 8,
+        "time": 0.28,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.6428571428571429,
+        "f1": 0.782608695652174,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k1",
+        "desc": "Kerber-Cab1",
+        "status": "OK",
+        "bus": 18,
+        "line": 16,
+        "time": 0.34,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "dickert_lv",
+        "desc": "Dickert-LV",
+        "status": "OK",
+        "bus": 3,
+        "line": 1,
+        "time": 0.15,
+        "gt_count": 4,
+        "det_rule": 6,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 0,
+        "det_total": 6,
+        "recall": 1.0,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case_ieee30",
+        "desc": "IEEE30",
+        "status": "OK",
+        "bus": 30,
+        "line": 34,
+        "time": 0.69,
+        "gt_count": 7,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.4666666666666667,
+        "f1": 0.6363636363636364,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case33bw",
+        "desc": "IEEE33",
+        "status": "OK",
+        "bus": 33,
+        "line": 37,
+        "time": 0.74,
+        "gt_count": 9,
+        "det_rule": 23,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case39",
+        "desc": "IEEE39",
+        "status": "OK",
+        "bus": 39,
+        "line": 35,
+        "time": 0.73,
+        "gt_count": 8,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.5333333333333333,
+        "f1": 0.6956521739130436,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case57",
+        "desc": "IEEE57",
+        "status": "OK",
+        "bus": 57,
+        "line": 63,
+        "time": 0.88,
+        "gt_count": 7,
+        "det_rule": 47,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 3,
+        "det_total": 13,
+        "recall": 1.0,
+        "precision": 0.5384615384615384,
+        "f1": 0.7000000000000001,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_lv",
+        "desc": "CIGRE-LV",
+        "status": "OK",
+        "bus": 44,
+        "line": 37,
+        "time": 0.49,
+        "gt_count": 12,
+        "det_rule": 18,
+        "det_se": 0,
+        "det_gnn": 4,
+        "det_signal": 3,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k2",
+        "desc": "Kerber-Cab2",
+        "status": "OK",
+        "bus": 30,
+        "line": 28,
+        "time": 0.44,
+        "gt_count": 9,
+        "det_rule": 12,
+        "det_se": 0,
+        "det_gnn": 5,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_dorf",
+        "desc": "Kerber-Dorf116",
+        "status": "OK",
+        "bus": 116,
+        "line": 114,
+        "time": 1.25,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_mv",
+        "desc": "MultiVolt57",
+        "status": "OK",
+        "bus": 57,
+        "line": 25,
+        "time": 0.66,
+        "gt_count": 12,
+        "det_rule": 25,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 17,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 20,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "synthetic_lv",
+        "desc": "SynthLV",
+        "status": "OK",
+        "bus": 26,
+        "line": 24,
+        "time": 0.39,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_hv",
+        "desc": "CIGRE-HV",
+        "status": "OK",
+        "bus": 13,
+        "line": 9,
+        "time": 0.33,
+        "gt_count": 7,
+        "det_rule": 11,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 11,
+        "recall": 1.0,
+        "precision": 0.6363636363636364,
+        "f1": 0.7777777777777778,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "illinois200",
+        "desc": "Illinois200",
+        "status": "OK",
+        "bus": 200,
+        "line": 179,
+        "time": 1.83,
+        "gt_count": 9,
+        "det_rule": 16,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 17,
+        "recall": 1.0,
+        "precision": 0.5294117647058824,
+        "f1": 0.6923076923076924,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "mv_oberrhein",
+        "desc": "DE-MV179",
+        "status": "OK",
+        "bus": 179,
+        "line": 181,
+        "time": 1.81,
+        "gt_count": 12,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 5,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 19,
+        "recall": 1.0,
+        "precision": 0.631578947368421,
+        "f1": 0.7741935483870968,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst1",
+        "desc": "Kerber-Sub1",
+        "status": "OK",
+        "bus": 294,
+        "line": 292,
+        "time": 1.41,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.6428571428571429,
+        "f1": 0.782608695652174,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst2",
+        "desc": "Kerber-Sub2",
+        "status": "OK",
+        "bus": 290,
+        "line": 288,
+        "time": 1.38,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.6428571428571429,
+        "f1": 0.782608695652174,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case89pegase",
+        "desc": "PEGASE89",
+        "status": "OK",
+        "bus": 89,
+        "line": 160,
+        "time": 1.51,
+        "gt_count": 9,
+        "det_rule": 17,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 17,
+        "recall": 1.0,
+        "precision": 0.5294117647058824,
+        "f1": 0.6923076923076924,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case118",
+        "desc": "IEEE118",
+        "status": "OK",
+        "bus": 118,
+        "line": 173,
+        "time": 1.6,
+        "gt_count": 9,
+        "det_rule": 16,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 17,
+        "recall": 1.0,
+        "precision": 0.5294117647058824,
+        "f1": 0.6923076923076924,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case300",
+        "desc": "IEEE300",
+        "status": "OK",
+        "bus": 300,
+        "line": 283,
+        "time": 0.92,
+        "gt_count": 9,
+        "det_rule": 27,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.6428571428571429,
+        "f1": 0.782608695652174,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case1354pegase",
+        "desc": "PEGASE1354",
+        "status": "OK",
+        "bus": 1354,
+        "line": 1751,
+        "time": 0.97,
+        "gt_count": 9,
+        "det_rule": 41,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 13,
+        "recall": 1.0,
+        "precision": 0.6923076923076923,
+        "f1": 0.8181818181818181,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case1888rte",
+        "desc": "RTE1888",
+        "status": "OK",
+        "bus": 1888,
+        "line": 1976,
+        "time": 0.95,
+        "gt_count": 9,
+        "det_rule": 45,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      }
+    ],
+    "avg_recall": 1.0,
+    "avg_f1": 0.7546061976658464,
+    "perfect_count": 30,
+    "ok_count": 30
+  },
+  "43": {
+    "results": [
+      {
+        "net": "case4gs",
+        "desc": "4-node",
+        "status": "OK",
+        "bus": 4,
+        "line": 4,
+        "time": 0.46,
+        "gt_count": 6,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 0,
+        "det_total": 8,
+        "recall": 1.0,
+        "precision": 0.75,
+        "f1": 0.8571428571428571,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case5",
+        "desc": "5-node",
+        "status": "OK",
+        "bus": 5,
+        "line": 6,
+        "time": 0.66,
+        "gt_count": 6,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 3,
+        "det_total": 9,
+        "recall": 1.0,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case6ww",
+        "desc": "6-node",
+        "status": "OK",
+        "bus": 6,
+        "line": 11,
+        "time": 0.55,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 11,
+        "recall": 1.0,
+        "precision": 0.5454545454545454,
+        "f1": 0.7058823529411764,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case9",
+        "desc": "9-node",
+        "status": "OK",
+        "bus": 9,
+        "line": 9,
+        "time": 0.5,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case14",
+        "desc": "IEEE14",
+        "status": "OK",
+        "bus": 14,
+        "line": 15,
+        "time": 0.65,
+        "gt_count": 6,
+        "det_rule": 9,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 12,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_simple",
+        "desc": "Example7",
+        "status": "OK",
+        "bus": 7,
+        "line": 4,
+        "time": 0.26,
+        "gt_count": 10,
+        "det_rule": 9,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 2,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 13,
+        "recall": 1.0,
+        "precision": 0.7692307692307693,
+        "f1": 0.8695652173913044,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_mv",
+        "desc": "CIGRE-MV",
+        "status": "OK",
+        "bus": 15,
+        "line": 15,
+        "time": 0.46,
+        "gt_count": 9,
+        "det_rule": 9,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 1,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 11,
+        "recall": 0.8888888888888888,
+        "precision": 0.7272727272727273,
+        "f1": 0.7999999999999999,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 2,
+            "inj": 3,
+            "recall": 0.6666666666666666
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f1",
+        "desc": "Kerber-OH1",
+        "status": "OK",
+        "bus": 15,
+        "line": 13,
+        "time": 0.37,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f2",
+        "desc": "Kerber-OH2",
+        "status": "OK",
+        "bus": 10,
+        "line": 8,
+        "time": 0.29,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k1",
+        "desc": "Kerber-Cab1",
+        "status": "OK",
+        "bus": 18,
+        "line": 16,
+        "time": 0.35,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "dickert_lv",
+        "desc": "Dickert-LV",
+        "status": "OK",
+        "bus": 3,
+        "line": 1,
+        "time": 0.16,
+        "gt_count": 4,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 0,
+        "det_total": 7,
+        "recall": 1.0,
+        "precision": 0.5714285714285714,
+        "f1": 0.7272727272727273,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case_ieee30",
+        "desc": "IEEE30",
+        "status": "OK",
+        "bus": 30,
+        "line": 34,
+        "time": 0.73,
+        "gt_count": 7,
+        "det_rule": 12,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.4666666666666667,
+        "f1": 0.6363636363636364,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case33bw",
+        "desc": "IEEE33",
+        "status": "OK",
+        "bus": 33,
+        "line": 37,
+        "time": 0.76,
+        "gt_count": 9,
+        "det_rule": 25,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case39",
+        "desc": "IEEE39",
+        "status": "OK",
+        "bus": 39,
+        "line": 35,
+        "time": 0.9,
+        "gt_count": 8,
+        "det_rule": 12,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.5333333333333333,
+        "f1": 0.6956521739130436,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case57",
+        "desc": "IEEE57",
+        "status": "OK",
+        "bus": 57,
+        "line": 63,
+        "time": 1.23,
+        "gt_count": 7,
+        "det_rule": 46,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_lv",
+        "desc": "CIGRE-LV",
+        "status": "OK",
+        "bus": 44,
+        "line": 37,
+        "time": 0.64,
+        "gt_count": 12,
+        "det_rule": 19,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 0.8333333333333334,
+        "precision": 0.625,
+        "f1": 0.7142857142857143,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 1,
+            "inj": 3,
+            "recall": 0.3333333333333333
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k2",
+        "desc": "Kerber-Cab2",
+        "status": "OK",
+        "bus": 30,
+        "line": 28,
+        "time": 0.67,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_dorf",
+        "desc": "Kerber-Dorf116",
+        "status": "OK",
+        "bus": 116,
+        "line": 114,
+        "time": 1.55,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_mv",
+        "desc": "MultiVolt57",
+        "status": "OK",
+        "bus": 57,
+        "line": 25,
+        "time": 0.76,
+        "gt_count": 12,
+        "det_rule": 24,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 22,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 20,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "synthetic_lv",
+        "desc": "SynthLV",
+        "status": "OK",
+        "bus": 26,
+        "line": 24,
+        "time": 0.42,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_hv",
+        "desc": "CIGRE-HV",
+        "status": "OK",
+        "bus": 13,
+        "line": 9,
+        "time": 0.32,
+        "gt_count": 7,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 10,
+        "recall": 1.0,
+        "precision": 0.7,
+        "f1": 0.8235294117647058,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "illinois200",
+        "desc": "Illinois200",
+        "status": "OK",
+        "bus": 200,
+        "line": 179,
+        "time": 1.79,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "mv_oberrhein",
+        "desc": "DE-MV179",
+        "status": "OK",
+        "bus": 179,
+        "line": 181,
+        "time": 1.64,
+        "gt_count": 12,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 4,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 20,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst1",
+        "desc": "Kerber-Sub1",
+        "status": "OK",
+        "bus": 294,
+        "line": 292,
+        "time": 1.37,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst2",
+        "desc": "Kerber-Sub2",
+        "status": "OK",
+        "bus": 290,
+        "line": 288,
+        "time": 1.48,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case89pegase",
+        "desc": "PEGASE89",
+        "status": "OK",
+        "bus": 89,
+        "line": 160,
+        "time": 1.55,
+        "gt_count": 9,
+        "det_rule": 17,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case118",
+        "desc": "IEEE118",
+        "status": "OK",
+        "bus": 118,
+        "line": 173,
+        "time": 1.45,
+        "gt_count": 9,
+        "det_rule": 16,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case300",
+        "desc": "IEEE300",
+        "status": "OK",
+        "bus": 300,
+        "line": 283,
+        "time": 0.8,
+        "gt_count": 9,
+        "det_rule": 26,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 17,
+        "recall": 1.0,
+        "precision": 0.5294117647058824,
+        "f1": 0.6923076923076924,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case1354pegase",
+        "desc": "PEGASE1354",
+        "status": "OK",
+        "bus": 1354,
+        "line": 1751,
+        "time": 0.86,
+        "gt_count": 9,
+        "det_rule": 43,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.6428571428571429,
+        "f1": 0.782608695652174,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case1888rte",
+        "desc": "RTE1888",
+        "status": "OK",
+        "bus": 1888,
+        "line": 1976,
+        "time": 0.91,
+        "gt_count": 9,
+        "det_rule": 42,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      }
+    ],
+    "avg_recall": 0.9907407407407407,
+    "avg_f1": 0.7335981270789456,
+    "perfect_count": 28,
+    "ok_count": 30
+  },
+  "44": {
+    "results": [
+      {
+        "net": "case4gs",
+        "desc": "4-node",
+        "status": "OK",
+        "bus": 4,
+        "line": 4,
+        "time": 0.48,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 0,
+        "det_total": 7,
+        "recall": 1.0,
+        "precision": 0.8571428571428571,
+        "f1": 0.923076923076923,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case5",
+        "desc": "5-node",
+        "status": "OK",
+        "bus": 5,
+        "line": 6,
+        "time": 0.65,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 3,
+        "det_total": 9,
+        "recall": 1.0,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case6ww",
+        "desc": "6-node",
+        "status": "OK",
+        "bus": 6,
+        "line": 11,
+        "time": 0.56,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 11,
+        "recall": 1.0,
+        "precision": 0.5454545454545454,
+        "f1": 0.7058823529411764,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case9",
+        "desc": "9-node",
+        "status": "OK",
+        "bus": 9,
+        "line": 9,
+        "time": 0.52,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case14",
+        "desc": "IEEE14",
+        "status": "OK",
+        "bus": 14,
+        "line": 15,
+        "time": 0.63,
+        "gt_count": 6,
+        "det_rule": 10,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 12,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_simple",
+        "desc": "Example7",
+        "status": "OK",
+        "bus": 7,
+        "line": 4,
+        "time": 0.32,
+        "gt_count": 10,
+        "det_rule": 11,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 2,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_mv",
+        "desc": "CIGRE-MV",
+        "status": "OK",
+        "bus": 15,
+        "line": 15,
+        "time": 0.38,
+        "gt_count": 9,
+        "det_rule": 9,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 2,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 13,
+        "recall": 1.0,
+        "precision": 0.6923076923076923,
+        "f1": 0.8181818181818181,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f1",
+        "desc": "Kerber-OH1",
+        "status": "OK",
+        "bus": 15,
+        "line": 13,
+        "time": 0.32,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f2",
+        "desc": "Kerber-OH2",
+        "status": "OK",
+        "bus": 10,
+        "line": 8,
+        "time": 0.4,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k1",
+        "desc": "Kerber-Cab1",
+        "status": "OK",
+        "bus": 18,
+        "line": 16,
+        "time": 0.34,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "dickert_lv",
+        "desc": "Dickert-LV",
+        "status": "OK",
+        "bus": 3,
+        "line": 1,
+        "time": 0.15,
+        "gt_count": 4,
+        "det_rule": 5,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 0,
+        "det_total": 5,
+        "recall": 0.75,
+        "precision": 0.6,
+        "f1": 0.6666666666666665,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 2,
+            "inj": 3,
+            "recall": 0.6666666666666666
+          }
+        },
+        "layers": [
+          "Rule",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case_ieee30",
+        "desc": "IEEE30",
+        "status": "OK",
+        "bus": 30,
+        "line": 34,
+        "time": 0.73,
+        "gt_count": 7,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.4666666666666667,
+        "f1": 0.6363636363636364,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case33bw",
+        "desc": "IEEE33",
+        "status": "OK",
+        "bus": 33,
+        "line": 37,
+        "time": 0.72,
+        "gt_count": 9,
+        "det_rule": 21,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case39",
+        "desc": "IEEE39",
+        "status": "OK",
+        "bus": 39,
+        "line": 35,
+        "time": 0.86,
+        "gt_count": 8,
+        "det_rule": 12,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.5333333333333333,
+        "f1": 0.6956521739130436,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case57",
+        "desc": "IEEE57",
+        "status": "OK",
+        "bus": 57,
+        "line": 63,
+        "time": 0.94,
+        "gt_count": 7,
+        "det_rule": 47,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.4666666666666667,
+        "f1": 0.6363636363636364,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_lv",
+        "desc": "CIGRE-LV",
+        "status": "OK",
+        "bus": 44,
+        "line": 37,
+        "time": 0.49,
+        "gt_count": 12,
+        "det_rule": 17,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 3,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 19,
+        "recall": 1.0,
+        "precision": 0.631578947368421,
+        "f1": 0.7741935483870968,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k2",
+        "desc": "Kerber-Cab2",
+        "status": "OK",
+        "bus": 30,
+        "line": 28,
+        "time": 0.45,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_dorf",
+        "desc": "Kerber-Dorf116",
+        "status": "OK",
+        "bus": 116,
+        "line": 114,
+        "time": 1.26,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_mv",
+        "desc": "MultiVolt57",
+        "status": "OK",
+        "bus": 57,
+        "line": 25,
+        "time": 0.64,
+        "gt_count": 12,
+        "det_rule": 22,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 17,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 20,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "synthetic_lv",
+        "desc": "SynthLV",
+        "status": "OK",
+        "bus": 26,
+        "line": 24,
+        "time": 0.48,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_hv",
+        "desc": "CIGRE-HV",
+        "status": "OK",
+        "bus": 13,
+        "line": 9,
+        "time": 0.32,
+        "gt_count": 7,
+        "det_rule": 10,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 12,
+        "recall": 1.0,
+        "precision": 0.5833333333333334,
+        "f1": 0.7368421052631579,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "illinois200",
+        "desc": "Illinois200",
+        "status": "OK",
+        "bus": 200,
+        "line": 179,
+        "time": 1.81,
+        "gt_count": 9,
+        "det_rule": 17,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "mv_oberrhein",
+        "desc": "DE-MV179",
+        "status": "OK",
+        "bus": 179,
+        "line": 181,
+        "time": 1.57,
+        "gt_count": 12,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 5,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 20,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst1",
+        "desc": "Kerber-Sub1",
+        "status": "OK",
+        "bus": 294,
+        "line": 292,
+        "time": 1.36,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst2",
+        "desc": "Kerber-Sub2",
+        "status": "OK",
+        "bus": 290,
+        "line": 288,
+        "time": 1.48,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case89pegase",
+        "desc": "PEGASE89",
+        "status": "OK",
+        "bus": 89,
+        "line": 160,
+        "time": 1.48,
+        "gt_count": 9,
+        "det_rule": 19,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case118",
+        "desc": "IEEE118",
+        "status": "OK",
+        "bus": 118,
+        "line": 173,
+        "time": 1.48,
+        "gt_count": 9,
+        "det_rule": 16,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case300",
+        "desc": "IEEE300",
+        "status": "OK",
+        "bus": 300,
+        "line": 283,
+        "time": 0.84,
+        "gt_count": 9,
+        "det_rule": 28,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 17,
+        "recall": 1.0,
+        "precision": 0.5294117647058824,
+        "f1": 0.6923076923076924,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case1354pegase",
+        "desc": "PEGASE1354",
+        "status": "OK",
+        "bus": 1354,
+        "line": 1751,
+        "time": 0.97,
+        "gt_count": 9,
+        "det_rule": 43,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case1888rte",
+        "desc": "RTE1888",
+        "status": "OK",
+        "bus": 1888,
+        "line": 1976,
+        "time": 1.05,
+        "gt_count": 9,
+        "det_rule": 42,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      }
+    ],
+    "avg_recall": 0.9916666666666667,
+    "avg_f1": 0.7250732406710506,
+    "perfect_count": 29,
+    "ok_count": 30
+  },
+  "45": {
+    "results": [
+      {
+        "net": "case4gs",
+        "desc": "4-node",
+        "status": "OK",
+        "bus": 4,
+        "line": 4,
+        "time": 0.48,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 0,
+        "det_total": 8,
+        "recall": 1.0,
+        "precision": 0.75,
+        "f1": 0.8571428571428571,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case5",
+        "desc": "5-node",
+        "status": "OK",
+        "bus": 5,
+        "line": 6,
+        "time": 0.74,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 10,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case6ww",
+        "desc": "6-node",
+        "status": "OK",
+        "bus": 6,
+        "line": 11,
+        "time": 0.73,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 10,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case9",
+        "desc": "9-node",
+        "status": "OK",
+        "bus": 9,
+        "line": 9,
+        "time": 0.6,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case14",
+        "desc": "IEEE14",
+        "status": "OK",
+        "bus": 14,
+        "line": 15,
+        "time": 0.68,
+        "gt_count": 6,
+        "det_rule": 9,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 10,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_simple",
+        "desc": "Example7",
+        "status": "OK",
+        "bus": 7,
+        "line": 4,
+        "time": 0.28,
+        "gt_count": 10,
+        "det_rule": 11,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 3,
+        "det_telemetry": 0,
+        "det_robust": 3,
+        "det_total": 13,
+        "recall": 1.0,
+        "precision": 0.7692307692307693,
+        "f1": 0.8695652173913044,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_mv",
+        "desc": "CIGRE-MV",
+        "status": "OK",
+        "bus": 15,
+        "line": 15,
+        "time": 0.39,
+        "gt_count": 9,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 9,
+        "recall": 0.6666666666666666,
+        "precision": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 0,
+            "inj": 3,
+            "recall": 0.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f1",
+        "desc": "Kerber-OH1",
+        "status": "OK",
+        "bus": 15,
+        "line": 13,
+        "time": 0.43,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f2",
+        "desc": "Kerber-OH2",
+        "status": "OK",
+        "bus": 10,
+        "line": 8,
+        "time": 0.32,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k1",
+        "desc": "Kerber-Cab1",
+        "status": "OK",
+        "bus": 18,
+        "line": 16,
+        "time": 0.41,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "dickert_lv",
+        "desc": "Dickert-LV",
+        "status": "OK",
+        "bus": 3,
+        "line": 1,
+        "time": 0.17,
+        "gt_count": 4,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 0,
+        "det_total": 7,
+        "recall": 1.0,
+        "precision": 0.5714285714285714,
+        "f1": 0.7272727272727273,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case_ieee30",
+        "desc": "IEEE30",
+        "status": "OK",
+        "bus": 30,
+        "line": 34,
+        "time": 0.77,
+        "gt_count": 7,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case33bw",
+        "desc": "IEEE33",
+        "status": "OK",
+        "bus": 33,
+        "line": 37,
+        "time": 0.72,
+        "gt_count": 9,
+        "det_rule": 27,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case39",
+        "desc": "IEEE39",
+        "status": "OK",
+        "bus": 39,
+        "line": 35,
+        "time": 0.86,
+        "gt_count": 8,
+        "det_rule": 12,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.5333333333333333,
+        "f1": 0.6956521739130436,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case57",
+        "desc": "IEEE57",
+        "status": "OK",
+        "bus": 57,
+        "line": 63,
+        "time": 0.96,
+        "gt_count": 7,
+        "det_rule": 43,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_lv",
+        "desc": "CIGRE-LV",
+        "status": "OK",
+        "bus": 44,
+        "line": 37,
+        "time": 0.5,
+        "gt_count": 12,
+        "det_rule": 20,
+        "det_se": 0,
+        "det_gnn": 5,
+        "det_signal": 3,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 19,
+        "recall": 1.0,
+        "precision": 0.631578947368421,
+        "f1": 0.7741935483870968,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k2",
+        "desc": "Kerber-Cab2",
+        "status": "OK",
+        "bus": 30,
+        "line": 28,
+        "time": 0.44,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_dorf",
+        "desc": "Kerber-Dorf116",
+        "status": "OK",
+        "bus": 116,
+        "line": 114,
+        "time": 1.24,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_mv",
+        "desc": "MultiVolt57",
+        "status": "OK",
+        "bus": 57,
+        "line": 25,
+        "time": 0.81,
+        "gt_count": 12,
+        "det_rule": 25,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 9,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 20,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "synthetic_lv",
+        "desc": "SynthLV",
+        "status": "OK",
+        "bus": 26,
+        "line": 24,
+        "time": 0.46,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_hv",
+        "desc": "CIGRE-HV",
+        "status": "OK",
+        "bus": 13,
+        "line": 9,
+        "time": 0.34,
+        "gt_count": 7,
+        "det_rule": 11,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 11,
+        "recall": 1.0,
+        "precision": 0.6363636363636364,
+        "f1": 0.7777777777777778,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "illinois200",
+        "desc": "Illinois200",
+        "status": "OK",
+        "bus": 200,
+        "line": 179,
+        "time": 1.98,
+        "gt_count": 9,
+        "det_rule": 17,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "mv_oberrhein",
+        "desc": "DE-MV179",
+        "status": "OK",
+        "bus": 179,
+        "line": 181,
+        "time": 1.67,
+        "gt_count": 12,
+        "det_rule": 16,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 6,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 20,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst1",
+        "desc": "Kerber-Sub1",
+        "status": "OK",
+        "bus": 294,
+        "line": 292,
+        "time": 1.4,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst2",
+        "desc": "Kerber-Sub2",
+        "status": "OK",
+        "bus": 290,
+        "line": 288,
+        "time": 1.38,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 5,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case89pegase",
+        "desc": "PEGASE89",
+        "status": "OK",
+        "bus": 89,
+        "line": 160,
+        "time": 1.68,
+        "gt_count": 9,
+        "det_rule": 19,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case118",
+        "desc": "IEEE118",
+        "status": "OK",
+        "bus": 118,
+        "line": 173,
+        "time": 1.48,
+        "gt_count": 9,
+        "det_rule": 17,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case300",
+        "desc": "IEEE300",
+        "status": "OK",
+        "bus": 300,
+        "line": 283,
+        "time": 0.8,
+        "gt_count": 9,
+        "det_rule": 31,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 17,
+        "recall": 1.0,
+        "precision": 0.5294117647058824,
+        "f1": 0.6923076923076924,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case1354pegase",
+        "desc": "PEGASE1354",
+        "status": "OK",
+        "bus": 1354,
+        "line": 1751,
+        "time": 0.88,
+        "gt_count": 9,
+        "det_rule": 36,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case1888rte",
+        "desc": "RTE1888",
+        "status": "OK",
+        "bus": 1888,
+        "line": 1976,
+        "time": 0.97,
+        "gt_count": 9,
+        "det_rule": 45,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      }
+    ],
+    "avg_recall": 0.9888888888888888,
+    "avg_f1": 0.7301303998064166,
+    "perfect_count": 29,
+    "ok_count": 30
+  },
+  "46": {
+    "results": [
+      {
+        "net": "case4gs",
+        "desc": "4-node",
+        "status": "OK",
+        "bus": 4,
+        "line": 4,
+        "time": 0.52,
+        "gt_count": 6,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 0,
+        "det_total": 7,
+        "recall": 1.0,
+        "precision": 0.8571428571428571,
+        "f1": 0.923076923076923,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case5",
+        "desc": "5-node",
+        "status": "OK",
+        "bus": 5,
+        "line": 6,
+        "time": 0.57,
+        "gt_count": 6,
+        "det_rule": 8,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 3,
+        "det_total": 9,
+        "recall": 1.0,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case6ww",
+        "desc": "6-node",
+        "status": "OK",
+        "bus": 6,
+        "line": 11,
+        "time": 0.59,
+        "gt_count": 6,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 3,
+        "det_total": 9,
+        "recall": 1.0,
+        "precision": 0.6666666666666666,
+        "f1": 0.8,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case9",
+        "desc": "9-node",
+        "status": "OK",
+        "bus": 9,
+        "line": 9,
+        "time": 0.65,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case14",
+        "desc": "IEEE14",
+        "status": "OK",
+        "bus": 14,
+        "line": 15,
+        "time": 0.66,
+        "gt_count": 6,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 10,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_simple",
+        "desc": "Example7",
+        "status": "OK",
+        "bus": 7,
+        "line": 4,
+        "time": 0.24,
+        "gt_count": 10,
+        "det_rule": 9,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 3,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.7142857142857143,
+        "f1": 0.8333333333333333,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_mv",
+        "desc": "CIGRE-MV",
+        "status": "OK",
+        "bus": 15,
+        "line": 15,
+        "time": 0.36,
+        "gt_count": 9,
+        "det_rule": 5,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 2,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 10,
+        "recall": 0.8888888888888888,
+        "precision": 0.8,
+        "f1": 0.8421052631578948,
+        "per_type": {
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 2,
+            "inj": 3,
+            "recall": 0.6666666666666666
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f1",
+        "desc": "Kerber-OH1",
+        "status": "OK",
+        "bus": 15,
+        "line": 13,
+        "time": 0.33,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_f2",
+        "desc": "Kerber-OH2",
+        "status": "OK",
+        "bus": 10,
+        "line": 8,
+        "time": 0.29,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k1",
+        "desc": "Kerber-Cab1",
+        "status": "OK",
+        "bus": 18,
+        "line": 16,
+        "time": 0.47,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "dickert_lv",
+        "desc": "Dickert-LV",
+        "status": "OK",
+        "bus": 3,
+        "line": 1,
+        "time": 0.16,
+        "gt_count": 4,
+        "det_rule": 7,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 0,
+        "det_robust": 0,
+        "det_total": 7,
+        "recall": 1.0,
+        "precision": 0.5714285714285714,
+        "f1": 0.7272727272727273,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case_ieee30",
+        "desc": "IEEE30",
+        "status": "OK",
+        "bus": 30,
+        "line": 34,
+        "time": 0.78,
+        "gt_count": 7,
+        "det_rule": 11,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 13,
+        "recall": 1.0,
+        "precision": 0.5384615384615384,
+        "f1": 0.7000000000000001,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case33bw",
+        "desc": "IEEE33",
+        "status": "OK",
+        "bus": 33,
+        "line": 37,
+        "time": 0.68,
+        "gt_count": 9,
+        "det_rule": 23,
+        "det_se": 0,
+        "det_gnn": 5,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case39",
+        "desc": "IEEE39",
+        "status": "OK",
+        "bus": 39,
+        "line": 35,
+        "time": 0.85,
+        "gt_count": 8,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.5333333333333333,
+        "f1": 0.6956521739130436,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case57",
+        "desc": "IEEE57",
+        "status": "OK",
+        "bus": 57,
+        "line": 63,
+        "time": 1.12,
+        "gt_count": 7,
+        "det_rule": 45,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 14,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_lv",
+        "desc": "CIGRE-LV",
+        "status": "OK",
+        "bus": 44,
+        "line": 37,
+        "time": 0.51,
+        "gt_count": 12,
+        "det_rule": 22,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 3,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 19,
+        "recall": 1.0,
+        "precision": 0.631578947368421,
+        "f1": 0.7741935483870968,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_k2",
+        "desc": "Kerber-Cab2",
+        "status": "OK",
+        "bus": 30,
+        "line": 28,
+        "time": 0.43,
+        "gt_count": 9,
+        "det_rule": 13,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_dorf",
+        "desc": "Kerber-Dorf116",
+        "status": "OK",
+        "bus": 116,
+        "line": 114,
+        "time": 1.28,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "example_mv",
+        "desc": "MultiVolt57",
+        "status": "OK",
+        "bus": 57,
+        "line": 25,
+        "time": 0.65,
+        "gt_count": 12,
+        "det_rule": 26,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 14,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 20,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "synthetic_lv",
+        "desc": "SynthLV",
+        "status": "OK",
+        "bus": 26,
+        "line": 24,
+        "time": 0.42,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "cigre_hv",
+        "desc": "CIGRE-HV",
+        "status": "OK",
+        "bus": 13,
+        "line": 9,
+        "time": 0.33,
+        "gt_count": 7,
+        "det_rule": 9,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 1,
+        "det_robust": 3,
+        "det_total": 11,
+        "recall": 1.0,
+        "precision": 0.6363636363636364,
+        "f1": 0.7777777777777778,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "illinois200",
+        "desc": "Illinois200",
+        "status": "OK",
+        "bus": 200,
+        "line": 179,
+        "time": 2.0,
+        "gt_count": 9,
+        "det_rule": 16,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 17,
+        "recall": 1.0,
+        "precision": 0.5294117647058824,
+        "f1": 0.6923076923076924,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "mv_oberrhein",
+        "desc": "DE-MV179",
+        "status": "OK",
+        "bus": 179,
+        "line": 181,
+        "time": 1.64,
+        "gt_count": 12,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 5,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 19,
+        "recall": 1.0,
+        "precision": 0.631578947368421,
+        "f1": 0.7741935483870968,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          },
+          "signal_mismatch": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "SIG",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst1",
+        "desc": "Kerber-Sub1",
+        "status": "OK",
+        "bus": 294,
+        "line": 292,
+        "time": 1.45,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "kerber_vorst2",
+        "desc": "Kerber-Sub2",
+        "status": "OK",
+        "bus": 290,
+        "line": 288,
+        "time": 1.39,
+        "gt_count": 9,
+        "det_rule": 15,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case89pegase",
+        "desc": "PEGASE89",
+        "status": "OK",
+        "bus": 89,
+        "line": 160,
+        "time": 1.54,
+        "gt_count": 9,
+        "det_rule": 14,
+        "det_se": 0,
+        "det_gnn": 1,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case118",
+        "desc": "IEEE118",
+        "status": "OK",
+        "bus": 118,
+        "line": 173,
+        "time": 1.61,
+        "gt_count": 9,
+        "det_rule": 16,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 18,
+        "recall": 1.0,
+        "precision": 0.5,
+        "f1": 0.6666666666666666,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "SE",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case300",
+        "desc": "IEEE300",
+        "status": "OK",
+        "bus": 300,
+        "line": 283,
+        "time": 0.78,
+        "gt_count": 9,
+        "det_rule": 27,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 3,
+        "det_total": 17,
+        "recall": 1.0,
+        "precision": 0.5294117647058824,
+        "f1": 0.6923076923076924,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "RSE",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": "irls"
+      },
+      {
+        "net": "case1354pegase",
+        "desc": "PEGASE1354",
+        "status": "OK",
+        "bus": 1354,
+        "line": 1751,
+        "time": 0.8,
+        "gt_count": 9,
+        "det_rule": 42,
+        "det_se": 0,
+        "det_gnn": 3,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 15,
+        "recall": 1.0,
+        "precision": 0.6,
+        "f1": 0.7499999999999999,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      },
+      {
+        "net": "case1888rte",
+        "desc": "RTE1888",
+        "status": "OK",
+        "bus": 1888,
+        "line": 1976,
+        "time": 1.01,
+        "gt_count": 9,
+        "det_rule": 42,
+        "det_se": 0,
+        "det_gnn": 2,
+        "det_signal": 0,
+        "det_telemetry": 2,
+        "det_robust": 0,
+        "det_total": 16,
+        "recall": 1.0,
+        "precision": 0.5625,
+        "f1": 0.72,
+        "per_type": {
+          "topo_interrupt": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "virtual_faulty": {
+            "hit": 3,
+            "inj": 3,
+            "recall": 1.0
+          },
+          "model_mismatch": {
+            "hit": 1,
+            "inj": 1,
+            "recall": 1.0
+          },
+          "telemetry_mismatch": {
+            "hit": 2,
+            "inj": 2,
+            "recall": 1.0
+          }
+        },
+        "layers": [
+          "Rule",
+          "TEL",
+          "GNN"
+        ],
+        "robust_se_method": null
+      }
+    ],
+    "avg_recall": 0.9962962962962963,
+    "avg_f1": 0.7468518004418204,
+    "perfect_count": 29,
+    "ok_count": 30
+  }
+}

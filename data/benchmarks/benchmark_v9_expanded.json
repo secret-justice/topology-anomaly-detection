@@ -1,0 +1,8344 @@
+{
+  "results": [
+    {
+      "net": "case4gs",
+      "desc": "4-node",
+      "status": "OK",
+      "bus": 4,
+      "line": 4,
+      "time": 2.94,
+      "gt_count": 32,
+      "det_rule": 5,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 0,
+      "det_outlier": 1,
+      "det_stale": 1,
+      "det_param": 2,
+      "det_load": 2,
+      "det_rpf": 5,
+      "det_comm": 1,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 2,
+      "det_bsm": 0,
+      "det_bypass": 1,
+      "det_ltr": 2,
+      "det_tap": 0,
+      "det_gnd": 3,
+      "det_clk": 0,
+      "det_harm": 3,
+      "det_imp": 1,
+      "det_dgi": 0,
+      "det_bias": 0,
+      "det_cont": 2,
+      "det_obf": 3,
+      "det_vreg": 1,
+      "bdd_status": "ok",
+      "det_total": 32,
+      "recall": 0.78125,
+      "precision": 0.78125,
+      "f1": 0.78125,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "virtual_faulty": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "dg_intermittent": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_bias": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "branch_contingency": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "topo_obfuscation": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "PROT",
+        "GROUNDING",
+        "HARMONIC",
+        "IMPEDANCE",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case5",
+      "desc": "5-node",
+      "status": "OK",
+      "bus": 5,
+      "line": 6,
+      "time": 0.57,
+      "gt_count": 40,
+      "det_rule": 5,
+      "det_se": 5,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 1,
+      "det_param": 3,
+      "det_load": 2,
+      "det_rpf": 5,
+      "det_comm": 1,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 1,
+      "det_prot": 3,
+      "det_bsm": 2,
+      "det_bypass": 0,
+      "det_ltr": 2,
+      "det_tap": 0,
+      "det_gnd": 3,
+      "det_clk": 0,
+      "det_harm": 3,
+      "det_imp": 2,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 2,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 45,
+      "recall": 0.875,
+      "precision": 0.7777777777777778,
+      "f1": 0.823529411764706,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "SE",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "GROUNDING",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case6ww",
+      "desc": "6-node",
+      "status": "OK",
+      "bus": 6,
+      "line": 11,
+      "time": 0.81,
+      "gt_count": 43,
+      "det_rule": 3,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 1,
+      "det_stale": 1,
+      "det_param": 2,
+      "det_load": 2,
+      "det_rpf": 5,
+      "det_comm": 1,
+      "det_vc": 1,
+      "det_ghost": 2,
+      "det_dup": 1,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 0,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 1,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 3,
+      "det_obf": 3,
+      "det_vreg": 1,
+      "bdd_status": "ok",
+      "det_total": 40,
+      "recall": 0.813953488372093,
+      "precision": 0.875,
+      "f1": 0.8433734939759036,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "virtual_faulty": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case9",
+      "desc": "9-node",
+      "status": "OK",
+      "bus": 9,
+      "line": 9,
+      "time": 0.59,
+      "gt_count": 48,
+      "det_rule": 10,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 0,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 1,
+      "det_param": 3,
+      "det_load": 2,
+      "det_rpf": 5,
+      "det_comm": 2,
+      "det_vc": 2,
+      "det_ghost": 2,
+      "det_dup": 3,
+      "det_prot": 1,
+      "det_bsm": 3,
+      "det_bypass": 1,
+      "det_ltr": 3,
+      "det_tap": 0,
+      "det_gnd": 2,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 0,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 50,
+      "recall": 0.9375,
+      "precision": 0.9,
+      "f1": 0.9183673469387755,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "trafo_tap_fault": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case14",
+      "desc": "IEEE14",
+      "status": "OK",
+      "bus": 14,
+      "line": 15,
+      "time": 0.66,
+      "gt_count": 50,
+      "det_rule": 4,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 1,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 2,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 2,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 0,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 2,
+      "bdd_status": "ok",
+      "det_total": 55,
+      "recall": 0.96,
+      "precision": 0.8727272727272727,
+      "f1": 0.9142857142857144,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "example_simple",
+      "desc": "Example7",
+      "status": "OK",
+      "bus": 7,
+      "line": 4,
+      "time": 0.25,
+      "gt_count": 47,
+      "det_rule": 7,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 2,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 2,
+      "det_stale": 1,
+      "det_param": 0,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 1,
+      "det_vc": 2,
+      "det_ghost": 1,
+      "det_dup": 0,
+      "det_prot": 0,
+      "det_bsm": 1,
+      "det_bypass": 0,
+      "det_ltr": 3,
+      "det_tap": 1,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 1,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 4,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 42,
+      "recall": 0.7446808510638298,
+      "precision": 0.8333333333333334,
+      "f1": 0.7865168539325842,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "load_shift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Signal",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "cigre_mv",
+      "desc": "CIGRE-MV",
+      "status": "OK",
+      "bus": 15,
+      "line": 15,
+      "time": 0.6,
+      "gt_count": 53,
+      "det_rule": 5,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 3,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 2,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 1,
+      "det_prot": 1,
+      "det_bsm": 3,
+      "det_bypass": 2,
+      "det_ltr": 3,
+      "det_tap": 2,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 4,
+      "det_obf": 3,
+      "det_vreg": 2,
+      "bdd_status": "ok",
+      "det_total": 58,
+      "recall": 0.9433962264150944,
+      "precision": 0.8620689655172413,
+      "f1": 0.9009009009009009,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 3,
+          "inj": 4,
+          "recall": 0.75
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "protection_misconfig": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Signal",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_f1",
+      "desc": "Kerber-OH1",
+      "status": "OK",
+      "bus": 15,
+      "line": 13,
+      "time": 0.51,
+      "gt_count": 53,
+      "det_rule": 8,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 0,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 1,
+      "det_dup": 3,
+      "det_prot": 1,
+      "det_bsm": 2,
+      "det_bypass": 1,
+      "det_ltr": 3,
+      "det_tap": 1,
+      "det_gnd": 2,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 0,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 55,
+      "recall": 0.9433962264150944,
+      "precision": 0.9090909090909091,
+      "f1": 0.9259259259259259,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 3,
+          "inj": 4,
+          "recall": 0.75
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_f2",
+      "desc": "Kerber-OH2",
+      "status": "OK",
+      "bus": 10,
+      "line": 8,
+      "time": 0.39,
+      "gt_count": 50,
+      "det_rule": 7,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 1,
+      "det_stale": 1,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 4,
+      "det_comm": 2,
+      "det_vc": 2,
+      "det_ghost": 2,
+      "det_dup": 2,
+      "det_prot": 1,
+      "det_bsm": 2,
+      "det_bypass": 1,
+      "det_ltr": 2,
+      "det_tap": 1,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 2,
+      "bdd_status": "ok",
+      "det_total": 51,
+      "recall": 0.92,
+      "precision": 0.9019607843137255,
+      "f1": 0.9108910891089109,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_k1",
+      "desc": "Kerber-Cab1",
+      "status": "OK",
+      "bus": 18,
+      "line": 16,
+      "time": 0.37,
+      "gt_count": 51,
+      "det_rule": 11,
+      "det_se": 5,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 2,
+      "det_load": 3,
+      "det_rpf": 4,
+      "det_comm": 3,
+      "det_vc": 2,
+      "det_ghost": 2,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 1,
+      "det_ltr": 1,
+      "det_tap": 1,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 56,
+      "recall": 0.9411764705882353,
+      "precision": 0.8571428571428571,
+      "f1": 0.897196261682243,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "SE",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "dickert_lv",
+      "desc": "Dickert-LV",
+      "status": "OK",
+      "bus": 3,
+      "line": 1,
+      "time": 0.16,
+      "gt_count": 17,
+      "det_rule": 2,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 0,
+      "det_outlier": 2,
+      "det_stale": 1,
+      "det_param": 0,
+      "det_load": 2,
+      "det_rpf": 0,
+      "det_comm": 0,
+      "det_vc": 2,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 0,
+      "det_bsm": 0,
+      "det_bypass": 0,
+      "det_ltr": 1,
+      "det_tap": 1,
+      "det_gnd": 3,
+      "det_clk": 0,
+      "det_harm": 2,
+      "det_imp": 0,
+      "det_dgi": 0,
+      "det_bias": 0,
+      "det_cont": 0,
+      "det_obf": 0,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 20,
+      "recall": 0.8823529411764706,
+      "precision": 0.75,
+      "f1": 0.8108108108108107,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "telemetry_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "load_shift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "communication_loss": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "protection_misconfig": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "dg_intermittent": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_bias": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "branch_contingency": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "topo_obfuscation": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "bypass_operation": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "load_transfer_residual": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "LOAD",
+        "VC",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "HARMONIC",
+        "VREG",
+        "LTR"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case_ieee30",
+      "desc": "IEEE30",
+      "status": "OK",
+      "bus": 30,
+      "line": 34,
+      "time": 0.79,
+      "gt_count": 52,
+      "det_rule": 6,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 2,
+      "det_ghost": 2,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 2,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 2,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 57,
+      "recall": 0.9807692307692307,
+      "precision": 0.8947368421052632,
+      "f1": 0.9357798165137614,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case33bw",
+      "desc": "IEEE33",
+      "status": "OK",
+      "bus": 33,
+      "line": 37,
+      "time": 0.75,
+      "gt_count": 51,
+      "det_rule": 14,
+      "det_se": 5,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 2,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 0,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 60,
+      "recall": 1.0,
+      "precision": 0.85,
+      "f1": 0.9189189189189189,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "SE",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case39",
+      "desc": "IEEE39",
+      "status": "OK",
+      "bus": 39,
+      "line": 35,
+      "time": 0.98,
+      "gt_count": 53,
+      "det_rule": 6,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 2,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 2,
+      "det_ltr": 3,
+      "det_tap": 2,
+      "det_gnd": 2,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 1,
+      "bdd_status": "ok",
+      "det_total": 59,
+      "recall": 1.0,
+      "precision": 0.8983050847457628,
+      "f1": 0.9464285714285715,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case57",
+      "desc": "IEEE57",
+      "status": "OK",
+      "bus": 57,
+      "line": 63,
+      "time": 1.12,
+      "gt_count": 51,
+      "det_rule": 7,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 0,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 58,
+      "recall": 0.9803921568627451,
+      "precision": 0.8620689655172413,
+      "f1": 0.9174311926605505,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "cigre_lv",
+      "desc": "CIGRE-LV",
+      "status": "OK",
+      "bus": 44,
+      "line": 37,
+      "time": 0.6,
+      "gt_count": 56,
+      "det_rule": 9,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 1,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 63,
+      "recall": 0.9642857142857143,
+      "precision": 0.8571428571428571,
+      "f1": 0.9075630252100839,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 3,
+          "inj": 4,
+          "recall": 0.75
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Signal",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_k2",
+      "desc": "Kerber-Cab2",
+      "status": "OK",
+      "bus": 30,
+      "line": 28,
+      "time": 0.5,
+      "gt_count": 51,
+      "det_rule": 12,
+      "det_se": 19,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 2,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 2,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 1,
+      "det_ltr": 3,
+      "det_tap": 1,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 1,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 58,
+      "recall": 0.9607843137254902,
+      "precision": 0.8448275862068966,
+      "f1": 0.8990825688073395,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 3,
+          "inj": 4,
+          "recall": 0.75
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "SE",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_dorf",
+      "desc": "Kerber-Dorf116",
+      "status": "OK",
+      "bus": 116,
+      "line": 114,
+      "time": 1.35,
+      "gt_count": 54,
+      "det_rule": 14,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 1,
+      "det_ltr": 3,
+      "det_tap": 1,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 61,
+      "recall": 1.0,
+      "precision": 0.8852459016393442,
+      "f1": 0.9391304347826086,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "example_mv",
+      "desc": "MultiVolt57",
+      "status": "OK",
+      "bus": 57,
+      "line": 25,
+      "time": 0.77,
+      "gt_count": 57,
+      "det_rule": 9,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 3,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 1,
+      "det_ltr": 3,
+      "det_tap": 2,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 64,
+      "recall": 1.0,
+      "precision": 0.890625,
+      "f1": 0.9421487603305785,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Signal",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "synthetic_lv",
+      "desc": "SynthLV",
+      "status": "OK",
+      "bus": 26,
+      "line": 24,
+      "time": 0.46,
+      "gt_count": 53,
+      "det_rule": 10,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 4,
+      "det_comm": 3,
+      "det_vc": 1,
+      "det_ghost": 1,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 2,
+      "det_ltr": 3,
+      "det_tap": 1,
+      "det_gnd": 2,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 2,
+      "bdd_status": "ok",
+      "det_total": 58,
+      "recall": 0.9245283018867925,
+      "precision": 0.8448275862068966,
+      "f1": 0.8828828828828829,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "cigre_hv",
+      "desc": "CIGRE-HV",
+      "status": "OK",
+      "bus": 13,
+      "line": 9,
+      "time": 0.51,
+      "gt_count": 52,
+      "det_rule": 9,
+      "det_se": 5,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 1,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 2,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 2,
+      "det_ghost": 1,
+      "det_dup": 3,
+      "det_prot": 1,
+      "det_bsm": 3,
+      "det_bypass": 2,
+      "det_ltr": 3,
+      "det_tap": 2,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 1,
+      "bdd_status": "ok",
+      "det_total": 57,
+      "recall": 0.9423076923076923,
+      "precision": 0.8596491228070176,
+      "f1": 0.8990825688073394,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "SE",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "illinois200",
+      "desc": "Illinois200",
+      "status": "OK",
+      "bus": 200,
+      "line": 179,
+      "time": 2.01,
+      "gt_count": 54,
+      "det_rule": 8,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 2,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 3,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 63,
+      "recall": 1.0,
+      "precision": 0.8571428571428571,
+      "f1": 0.923076923076923,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "mv_oberrhein",
+      "desc": "DE-MV179",
+      "status": "OK",
+      "bus": 179,
+      "line": 181,
+      "time": 1.73,
+      "gt_count": 60,
+      "det_rule": 10,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 3,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 2,
+      "det_ltr": 3,
+      "det_tap": 2,
+      "det_gnd": 2,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 66,
+      "recall": 1.0,
+      "precision": 0.9090909090909091,
+      "f1": 0.9523809523809523,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Signal",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_vorst1",
+      "desc": "Kerber-Sub1",
+      "status": "OK",
+      "bus": 294,
+      "line": 292,
+      "time": 1.57,
+      "gt_count": 52,
+      "det_rule": 13,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 1,
+      "det_ltr": 1,
+      "det_tap": 1,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 60,
+      "recall": 1.0,
+      "precision": 0.8666666666666667,
+      "f1": 0.9285714285714286,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_vorst2",
+      "desc": "Kerber-Sub2",
+      "status": "OK",
+      "bus": 290,
+      "line": 288,
+      "time": 1.62,
+      "gt_count": 53,
+      "det_rule": 13,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 1,
+      "det_gnd": 2,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 2,
+      "bdd_status": "ok",
+      "det_total": 62,
+      "recall": 1.0,
+      "precision": 0.8548387096774194,
+      "f1": 0.9217391304347826,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case89pegase",
+      "desc": "PEGASE89",
+      "status": "OK",
+      "bus": 89,
+      "line": 160,
+      "time": 2.17,
+      "gt_count": 56,
+      "det_rule": 8,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 2,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 2,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 62,
+      "recall": 0.9821428571428571,
+      "precision": 0.8870967741935484,
+      "f1": 0.9322033898305085,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case118",
+      "desc": "IEEE118",
+      "status": "OK",
+      "bus": 118,
+      "line": 173,
+      "time": 2.88,
+      "gt_count": 55,
+      "det_rule": 7,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 2,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 2,
+      "bdd_status": "ok",
+      "det_total": 60,
+      "recall": 0.9636363636363636,
+      "precision": 0.8833333333333333,
+      "f1": 0.9217391304347826,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case300",
+      "desc": "IEEE300",
+      "status": "OK",
+      "bus": 300,
+      "line": 283,
+      "time": 1.78,
+      "gt_count": 55,
+      "det_rule": 9,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 63,
+      "recall": 1.0,
+      "precision": 0.873015873015873,
+      "f1": 0.9322033898305084,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case1354pegase",
+      "desc": "PEGASE1354",
+      "status": "OK",
+      "bus": 1354,
+      "line": 1751,
+      "time": 2.4,
+      "gt_count": 54,
+      "det_rule": 9,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 62,
+      "recall": 1.0,
+      "precision": 0.8709677419354839,
+      "f1": 0.9310344827586207,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case1888rte",
+      "desc": "RTE1888",
+      "status": "OK",
+      "bus": 1888,
+      "line": 1976,
+      "time": 2.39,
+      "gt_count": 55,
+      "det_rule": 7,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 3,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 62,
+      "recall": 1.0,
+      "precision": 0.8870967741935484,
+      "f1": 0.9401709401709402,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "merged_60",
+      "desc": "Merged-60",
+      "status": "OK",
+      "bus": 63,
+      "line": 71,
+      "time": 1.73,
+      "gt_count": 55,
+      "det_rule": 14,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 1,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 2,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 2,
+      "bdd_status": "ok",
+      "det_total": 60,
+      "recall": 0.9818181818181818,
+      "precision": 0.9,
+      "f1": 0.9391304347826087,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "multi_feeder_400",
+      "desc": "MultiFeeder400",
+      "status": "OK",
+      "bus": 363,
+      "line": 651,
+      "time": 3.76,
+      "gt_count": 53,
+      "det_rule": 10,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 0,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 2,
+      "det_tap": 0,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 58,
+      "recall": 0.9433962264150944,
+      "precision": 0.8620689655172413,
+      "f1": 0.9009009009009009,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 0,
+          "inj": 3,
+          "recall": 0.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "large_radial_lv_600",
+      "desc": "LargeRadialLV600",
+      "status": "OK",
+      "bus": 572,
+      "line": 481,
+      "time": 2.34,
+      "gt_count": 57,
+      "det_rule": 12,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 1,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 0,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 0,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 57,
+      "recall": 0.9122807017543859,
+      "precision": 0.9122807017543859,
+      "f1": 0.9122807017543859,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 0,
+          "inj": 3,
+          "recall": 0.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Signal",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case2869pegase",
+      "desc": "PEGASE2869",
+      "status": "OK",
+      "bus": 2869,
+      "line": 4051,
+      "time": 2.84,
+      "gt_count": 54,
+      "det_rule": 10,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 62,
+      "recall": 1.0,
+      "precision": 0.8709677419354839,
+      "f1": 0.9310344827586207,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case3120sp",
+      "desc": "SP3120",
+      "status": "OK",
+      "bus": 3120,
+      "line": 3487,
+      "time": 2.69,
+      "gt_count": 55,
+      "det_rule": 9,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 3,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 63,
+      "recall": 1.0,
+      "precision": 0.873015873015873,
+      "f1": 0.9322033898305084,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case6470rte",
+      "desc": "RTE6470",
+      "status": "OK",
+      "bus": 6470,
+      "line": 7426,
+      "time": 5.98,
+      "gt_count": 56,
+      "det_rule": 9,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 3,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 62,
+      "recall": 1.0,
+      "precision": 0.9032258064516129,
+      "f1": 0.9491525423728813,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case9241pegase",
+      "desc": "PEGASE9241",
+      "status": "OK",
+      "bus": 9241,
+      "line": 13797,
+      "time": 12.9,
+      "gt_count": 55,
+      "det_rule": 6,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 60,
+      "recall": 0.9636363636363636,
+      "precision": 0.8833333333333333,
+      "f1": 0.9217391304347826,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "merged_ieee_500",
+      "desc": "IEEE-500M",
+      "status": "OK",
+      "bus": 357,
+      "line": 346,
+      "time": 2.85,
+      "gt_count": 57,
+      "det_rule": 9,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_bsm": 3,
+      "det_bypass": 3,
+      "det_ltr": 3,
+      "det_tap": 3,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 3,
+      "det_imp": 3,
+      "det_dgi": 2,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 3,
+      "bdd_status": "ok",
+      "det_total": 63,
+      "recall": 1.0,
+      "precision": 0.9047619047619048,
+      "f1": 0.9500000000000001,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "merged_kerber_300",
+      "desc": "Kerber-300M",
+      "status": "OK",
+      "bus": 584,
+      "line": 580,
+      "time": 4.79,
+      "gt_count": 56,
+      "det_rule": 13,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 5,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_bsm": 3,
+      "det_bypass": 1,
+      "det_ltr": 3,
+      "det_tap": 2,
+      "det_gnd": 3,
+      "det_clk": 3,
+      "det_harm": 2,
+      "det_imp": 3,
+      "det_dgi": 1,
+      "det_bias": 1,
+      "det_cont": 5,
+      "det_obf": 3,
+      "det_vreg": 2,
+      "bdd_status": "ok",
+      "det_total": 60,
+      "recall": 1.0,
+      "precision": 0.9333333333333333,
+      "f1": 0.9655172413793104,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 0,
+          "inj": 0,
+          "recall": 0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "communication_loss": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "trafo_tap_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "grounding_fault": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "clock_drift": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "harmonic_pollution": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "impedance_degradation": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "dg_intermittent": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "measurement_bias": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "branch_contingency": {
+          "hit": 4,
+          "inj": 4,
+          "recall": 1.0
+        },
+        "topo_obfuscation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_regulation": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "bus_section_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "bypass_operation": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "load_transfer_residual": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "Telemetry",
+        "OUT",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT",
+        "TRAFO_TAP",
+        "GROUNDING",
+        "CLOCK_DRIFT",
+        "HARMONIC",
+        "IMPEDANCE",
+        "DG_INTER",
+        "MEAS_BIAS",
+        "CONTINGENCY",
+        "TOPO_OBF",
+        "VREG",
+        "BSM",
+        "BYPASS",
+        "LTR"
+      ],
+      "robust_se_method": null
+    }
+  ],
+  "version": "v9.0",
+  "anomaly_types": [
+    "topo_interrupt",
+    "virtual_faulty",
+    "model_mismatch",
+    "telemetry_mismatch",
+    "signal_mismatch",
+    "measurement_outlier",
+    "stale_data",
+    "parameter_error",
+    "load_shift",
+    "reverse_power_flow",
+    "communication_loss",
+    "voltage_collapse",
+    "ghost_topology",
+    "duplicate_measurement",
+    "protection_misconfig",
+    "trafo_tap_fault",
+    "grounding_fault",
+    "clock_drift",
+    "harmonic_pollution",
+    "impedance_degradation",
+    "dg_intermittent",
+    "measurement_bias",
+    "branch_contingency",
+    "topo_obfuscation",
+    "voltage_regulation",
+    "bus_section_mismatch",
+    "bypass_operation",
+    "load_transfer_residual"
+  ],
+  "network_count": 39,
+  "new_types_added": 10,
+  "new_networks_added": 9
+}

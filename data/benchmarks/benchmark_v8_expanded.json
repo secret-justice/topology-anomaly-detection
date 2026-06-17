@@ -1,0 +1,3579 @@
+{
+  "results": [
+    {
+      "net": "case4gs",
+      "desc": "4-node",
+      "status": "OK",
+      "bus": 4,
+      "line": 4,
+      "time": 10.35,
+      "gt_count": 21,
+      "det_rule": 6,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 0,
+      "det_robust": 0,
+      "det_outlier": 0,
+      "det_stale": 0,
+      "det_param": 1,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 1,
+      "det_vc": 2,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 0,
+      "det_total": 12,
+      "recall": 0.5238095238095238,
+      "precision": 0.9166666666666666,
+      "f1": 0.6666666666666667,
+      "per_type": {
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "stale_data": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "parameter_error": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "DiffPhys",
+        "GNN",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case5",
+      "desc": "5-node",
+      "status": "OK",
+      "bus": 5,
+      "line": 6,
+      "time": 0.66,
+      "gt_count": 24,
+      "det_rule": 5,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 1,
+      "det_stale": 1,
+      "det_param": 1,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 1,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 3,
+      "det_total": 16,
+      "recall": 0.5833333333333334,
+      "precision": 0.875,
+      "f1": 0.7000000000000001,
+      "per_type": {
+        "virtual_faulty": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case6ww",
+      "desc": "6-node",
+      "status": "OK",
+      "bus": 6,
+      "line": 11,
+      "time": 0.54,
+      "gt_count": 24,
+      "det_rule": 6,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 2,
+      "det_stale": 2,
+      "det_param": 1,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 1,
+      "det_vc": 1,
+      "det_ghost": 1,
+      "det_dup": 2,
+      "det_prot": 3,
+      "det_total": 22,
+      "recall": 0.7916666666666666,
+      "precision": 0.8636363636363636,
+      "f1": 0.8260869565217391,
+      "per_type": {
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case9",
+      "desc": "9-node",
+      "status": "OK",
+      "bus": 9,
+      "line": 9,
+      "time": 0.51,
+      "gt_count": 29,
+      "det_rule": 12,
+      "det_se": 0,
+      "det_gnn": 3,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 1,
+      "det_param": 0,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 2,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 2,
+      "det_total": 24,
+      "recall": 0.6551724137931034,
+      "precision": 0.7916666666666666,
+      "f1": 0.7169811320754716,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "RPF",
+        "COMM",
+        "VC",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case14",
+      "desc": "IEEE14",
+      "status": "OK",
+      "bus": 14,
+      "line": 15,
+      "time": 0.61,
+      "gt_count": 29,
+      "det_rule": 11,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 1,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 2,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 2,
+      "det_prot": 3,
+      "det_total": 26,
+      "recall": 0.7586206896551724,
+      "precision": 0.8461538461538461,
+      "f1": 0.8,
+      "per_type": {
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "example_simple",
+      "desc": "Example7",
+      "status": "OK",
+      "bus": 7,
+      "line": 4,
+      "time": 0.24,
+      "gt_count": 28,
+      "det_rule": 9,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 2,
+      "det_telemetry": 0,
+      "det_robust": 3,
+      "det_outlier": 2,
+      "det_stale": 1,
+      "det_param": 0,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 1,
+      "det_vc": 2,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 1,
+      "det_total": 21,
+      "recall": 0.6785714285714286,
+      "precision": 0.9047619047619048,
+      "f1": 0.7755102040816326,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "SIG",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "RPF",
+        "COMM",
+        "VC",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "cigre_mv",
+      "desc": "CIGRE-MV",
+      "status": "OK",
+      "bus": 15,
+      "line": 15,
+      "time": 0.64,
+      "gt_count": 32,
+      "det_rule": 12,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 2,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 0,
+      "det_stale": 2,
+      "det_param": 1,
+      "det_load": 3,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 0,
+      "det_dup": 2,
+      "det_prot": 3,
+      "det_total": 26,
+      "recall": 0.75,
+      "precision": 0.9230769230769231,
+      "f1": 0.8275862068965517,
+      "per_type": {
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "SIG",
+        "TEL",
+        "GNN",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_f1",
+      "desc": "Kerber-OH1",
+      "status": "OK",
+      "bus": 15,
+      "line": 13,
+      "time": 0.48,
+      "gt_count": 32,
+      "det_rule": 14,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 2,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 1,
+      "det_total": 26,
+      "recall": 0.65625,
+      "precision": 0.8076923076923077,
+      "f1": 0.7241379310344829,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_f2",
+      "desc": "Kerber-OH2",
+      "status": "OK",
+      "bus": 10,
+      "line": 8,
+      "time": 0.3,
+      "gt_count": 30,
+      "det_rule": 15,
+      "det_se": 0,
+      "det_gnn": 2,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 0,
+      "det_stale": 2,
+      "det_param": 2,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 2,
+      "det_vc": 3,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 1,
+      "det_total": 24,
+      "recall": 0.6666666666666666,
+      "precision": 0.8333333333333334,
+      "f1": 0.7407407407407408,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_k1",
+      "desc": "Kerber-Cab1",
+      "status": "OK",
+      "bus": 18,
+      "line": 16,
+      "time": 0.35,
+      "gt_count": 32,
+      "det_rule": 17,
+      "det_se": 0,
+      "det_gnn": 3,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 2,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 0,
+      "det_total": 27,
+      "recall": 0.625,
+      "precision": 0.7407407407407407,
+      "f1": 0.6779661016949152,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "dickert_lv",
+      "desc": "Dickert-LV",
+      "status": "OK",
+      "bus": 3,
+      "line": 1,
+      "time": 0.16,
+      "gt_count": 11,
+      "det_rule": 6,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 0,
+      "det_robust": 0,
+      "det_outlier": 0,
+      "det_stale": 1,
+      "det_param": 0,
+      "det_load": 0,
+      "det_rpf": 0,
+      "det_comm": 0,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 0,
+      "det_total": 8,
+      "recall": 0.5454545454545454,
+      "precision": 0.75,
+      "f1": 0.631578947368421,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "stale_data": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "DiffPhys",
+        "GNN",
+        "STALE",
+        "VC"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case_ieee30",
+      "desc": "IEEE30",
+      "status": "OK",
+      "bus": 30,
+      "line": 34,
+      "time": 0.72,
+      "gt_count": 30,
+      "det_rule": 13,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 0,
+      "det_dup": 2,
+      "det_prot": 3,
+      "det_total": 32,
+      "recall": 0.8333333333333334,
+      "precision": 0.78125,
+      "f1": 0.8064516129032259,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case33bw",
+      "desc": "IEEE33",
+      "status": "OK",
+      "bus": 33,
+      "line": 37,
+      "time": 0.79,
+      "gt_count": 32,
+      "det_rule": 25,
+      "det_se": 0,
+      "det_gnn": 2,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 0,
+      "det_stale": 3,
+      "det_param": 1,
+      "det_load": 2,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 2,
+      "det_prot": 3,
+      "det_total": 30,
+      "recall": 0.71875,
+      "precision": 0.7666666666666667,
+      "f1": 0.7419354838709677,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "SE",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case39",
+      "desc": "IEEE39",
+      "status": "OK",
+      "bus": 39,
+      "line": 35,
+      "time": 0.87,
+      "gt_count": 31,
+      "det_rule": 14,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 1,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 2,
+      "det_prot": 2,
+      "det_total": 30,
+      "recall": 0.7741935483870968,
+      "precision": 0.8,
+      "f1": 0.7868852459016393,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case57",
+      "desc": "IEEE57",
+      "status": "OK",
+      "bus": 57,
+      "line": 63,
+      "time": 0.96,
+      "gt_count": 31,
+      "det_rule": 41,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 0,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 0,
+      "det_dup": 2,
+      "det_prot": 3,
+      "det_total": 29,
+      "recall": 0.7419354838709677,
+      "precision": 0.7931034482758621,
+      "f1": 0.7666666666666667,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "cigre_lv",
+      "desc": "CIGRE-LV",
+      "status": "OK",
+      "bus": 44,
+      "line": 37,
+      "time": 0.52,
+      "gt_count": 36,
+      "det_rule": 22,
+      "det_se": 0,
+      "det_gnn": 5,
+      "det_signal": 2,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 2,
+      "det_stale": 2,
+      "det_param": 1,
+      "det_load": 2,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 2,
+      "det_ghost": 0,
+      "det_dup": 2,
+      "det_prot": 2,
+      "det_total": 33,
+      "recall": 0.8055555555555556,
+      "precision": 0.8787878787878788,
+      "f1": 0.8405797101449276,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "SIG",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_k2",
+      "desc": "Kerber-Cab2",
+      "status": "OK",
+      "bus": 30,
+      "line": 28,
+      "time": 0.47,
+      "gt_count": 32,
+      "det_rule": 18,
+      "det_se": 0,
+      "det_gnn": 5,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 2,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 1,
+      "det_ghost": 1,
+      "det_dup": 0,
+      "det_prot": 3,
+      "det_total": 31,
+      "recall": 0.71875,
+      "precision": 0.7419354838709677,
+      "f1": 0.7301587301587302,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "SE",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_dorf",
+      "desc": "Kerber-Dorf116",
+      "status": "OK",
+      "bus": 116,
+      "line": 114,
+      "time": 1.22,
+      "gt_count": 33,
+      "det_rule": 20,
+      "det_se": 0,
+      "det_gnn": 2,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 2,
+      "det_ghost": 0,
+      "det_dup": 3,
+      "det_prot": 1,
+      "det_total": 32,
+      "recall": 0.7272727272727273,
+      "precision": 0.75,
+      "f1": 0.7384615384615384,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "example_mv",
+      "desc": "MultiVolt57",
+      "status": "OK",
+      "bus": 57,
+      "line": 25,
+      "time": 0.79,
+      "gt_count": 36,
+      "det_rule": 22,
+      "det_se": 0,
+      "det_gnn": 2,
+      "det_signal": 20,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 2,
+      "det_total": 33,
+      "recall": 0.7777777777777778,
+      "precision": 0.8484848484848485,
+      "f1": 0.8115942028985507,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "SIG",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "synthetic_lv",
+      "desc": "SynthLV",
+      "status": "OK",
+      "bus": 26,
+      "line": 24,
+      "time": 0.41,
+      "gt_count": 32,
+      "det_rule": 16,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 2,
+      "det_param": 2,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 0,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 2,
+      "det_total": 26,
+      "recall": 0.65625,
+      "precision": 0.8076923076923077,
+      "f1": 0.7241379310344829,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 0,
+          "inj": 3,
+          "recall": 0.0
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 1,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "cigre_hv",
+      "desc": "CIGRE-HV",
+      "status": "OK",
+      "bus": 13,
+      "line": 9,
+      "time": 0.35,
+      "gt_count": 30,
+      "det_rule": 12,
+      "det_se": 0,
+      "det_gnn": 2,
+      "det_signal": 0,
+      "det_telemetry": 1,
+      "det_robust": 3,
+      "det_outlier": 0,
+      "det_stale": 2,
+      "det_param": 1,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 2,
+      "det_ghost": 1,
+      "det_dup": 0,
+      "det_prot": 2,
+      "det_total": 23,
+      "recall": 0.6333333333333333,
+      "precision": 0.8260869565217391,
+      "f1": 0.7169811320754716,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "illinois200",
+      "desc": "Illinois200",
+      "status": "OK",
+      "bus": 200,
+      "line": 179,
+      "time": 1.78,
+      "gt_count": 33,
+      "det_rule": 21,
+      "det_se": 0,
+      "det_gnn": 3,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 0,
+      "det_ghost": 0,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_total": 33,
+      "recall": 0.7575757575757576,
+      "precision": 0.7575757575757576,
+      "f1": 0.7575757575757576,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 0,
+          "inj": 3,
+          "recall": 0.0
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "mv_oberrhein",
+      "desc": "DE-MV179",
+      "status": "OK",
+      "bus": 179,
+      "line": 181,
+      "time": 1.7,
+      "gt_count": 36,
+      "det_rule": 18,
+      "det_se": 0,
+      "det_gnn": 3,
+      "det_signal": 5,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 1,
+      "det_load": 1,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 0,
+      "det_ghost": 0,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_total": 33,
+      "recall": 0.7222222222222222,
+      "precision": 0.7878787878787878,
+      "f1": 0.7536231884057971,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "signal_mismatch": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "load_shift": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 0,
+          "inj": 3,
+          "recall": 0.0
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "SIG",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_vorst1",
+      "desc": "Kerber-Sub1",
+      "status": "OK",
+      "bus": 294,
+      "line": 292,
+      "time": 1.52,
+      "gt_count": 33,
+      "det_rule": 21,
+      "det_se": 0,
+      "det_gnn": 3,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 1,
+      "det_ghost": 0,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_total": 31,
+      "recall": 0.7272727272727273,
+      "precision": 0.7741935483870968,
+      "f1": 0.7500000000000001,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "VC",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "kerber_vorst2",
+      "desc": "Kerber-Sub2",
+      "status": "OK",
+      "bus": 290,
+      "line": 288,
+      "time": 1.55,
+      "gt_count": 33,
+      "det_rule": 23,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 0,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 0,
+      "det_ghost": 0,
+      "det_dup": 3,
+      "det_prot": 2,
+      "det_total": 30,
+      "recall": 0.696969696969697,
+      "precision": 0.7666666666666667,
+      "f1": 0.7301587301587302,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 0,
+          "inj": 3,
+          "recall": 0.0
+        },
+        "ghost_topology": {
+          "hit": 0,
+          "inj": 2,
+          "recall": 0.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "RPF",
+        "COMM",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case89pegase",
+      "desc": "PEGASE89",
+      "status": "OK",
+      "bus": 89,
+      "line": 160,
+      "time": 1.52,
+      "gt_count": 33,
+      "det_rule": 14,
+      "det_se": 0,
+      "det_gnn": 2,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 2,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 0,
+      "det_ghost": 2,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_total": 33,
+      "recall": 0.8181818181818182,
+      "precision": 0.8181818181818182,
+      "f1": 0.8181818181818182,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 0,
+          "inj": 3,
+          "recall": 0.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "GHOST",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case118",
+      "desc": "IEEE118",
+      "status": "OK",
+      "bus": 118,
+      "line": 173,
+      "time": 1.47,
+      "gt_count": 33,
+      "det_rule": 18,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 1,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_total": 35,
+      "recall": 0.8484848484848485,
+      "precision": 0.8,
+      "f1": 0.823529411764706,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 1,
+          "inj": 3,
+          "recall": 0.3333333333333333
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case300",
+      "desc": "IEEE300",
+      "status": "OK",
+      "bus": 300,
+      "line": 283,
+      "time": 0.85,
+      "gt_count": 33,
+      "det_rule": 35,
+      "det_se": 0,
+      "det_gnn": 1,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 3,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 3,
+      "det_ghost": 1,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_total": 34,
+      "recall": 0.8484848484848485,
+      "precision": 0.8235294117647058,
+      "f1": 0.8358208955223881,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "ghost_topology": {
+          "hit": 1,
+          "inj": 2,
+          "recall": 0.5
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "RSE",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "VC",
+        "GHOST",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": "irls"
+    },
+    {
+      "net": "case1354pegase",
+      "desc": "PEGASE1354",
+      "status": "OK",
+      "bus": 1354,
+      "line": 1751,
+      "time": 1.12,
+      "gt_count": 33,
+      "det_rule": 75,
+      "det_se": 0,
+      "det_gnn": 2,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 0,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_total": 32,
+      "recall": 0.8181818181818182,
+      "precision": 0.84375,
+      "f1": 0.8307692307692308,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 0,
+          "inj": 3,
+          "recall": 0.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "GHOST",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "case1888rte",
+      "desc": "RTE1888",
+      "status": "OK",
+      "bus": 1888,
+      "line": 1976,
+      "time": 1.13,
+      "gt_count": 33,
+      "det_rule": 55,
+      "det_se": 0,
+      "det_gnn": 3,
+      "det_signal": 0,
+      "det_telemetry": 2,
+      "det_robust": 0,
+      "det_outlier": 3,
+      "det_stale": 3,
+      "det_param": 3,
+      "det_load": 3,
+      "det_rpf": 3,
+      "det_comm": 3,
+      "det_vc": 0,
+      "det_ghost": 3,
+      "det_dup": 3,
+      "det_prot": 3,
+      "det_total": 34,
+      "recall": 0.8181818181818182,
+      "precision": 0.7941176470588235,
+      "f1": 0.8059701492537314,
+      "per_type": {
+        "topo_interrupt": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "virtual_faulty": {
+          "hit": 3,
+          "inj": 3,
+          "recall": 1.0
+        },
+        "model_mismatch": {
+          "hit": 1,
+          "inj": 1,
+          "recall": 1.0
+        },
+        "telemetry_mismatch": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "measurement_outlier": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "stale_data": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "parameter_error": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "load_shift": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "reverse_power_flow": {
+          "hit": 2,
+          "inj": 4,
+          "recall": 0.5
+        },
+        "communication_loss": {
+          "hit": 2,
+          "inj": 3,
+          "recall": 0.6666666666666666
+        },
+        "voltage_collapse": {
+          "hit": 0,
+          "inj": 3,
+          "recall": 0.0
+        },
+        "ghost_topology": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "duplicate_measurement": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        },
+        "protection_misconfig": {
+          "hit": 2,
+          "inj": 2,
+          "recall": 1.0
+        }
+      },
+      "layers": [
+        "Rule",
+        "DiffPhys",
+        "TEL",
+        "GNN",
+        "OUTLIER",
+        "STALE",
+        "PARAM",
+        "LOAD",
+        "RPF",
+        "COMM",
+        "GHOST",
+        "DUP",
+        "PROT"
+      ],
+      "robust_se_method": null
+    },
+    {
+      "net": "merged_30",
+      "desc": "Merged-30",
+      "status": "FAIL:'[4, 7, 8, 6, 9, 10, 11, 12, 17, 18, 19,",
+      "bus": 0,
+      "line": 0,
+      "time": 2.01,
+      "gt_count": 0,
+      "det_rule": 0,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 0,
+      "det_robust": 0,
+      "det_outlier": 0,
+      "det_stale": 0,
+      "det_param": 0,
+      "det_load": 0,
+      "det_rpf": 0,
+      "det_comm": 0,
+      "det_vc": 0,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 0,
+      "det_total": 0,
+      "recall": 0,
+      "precision": 0,
+      "f1": 0,
+      "per_type": {},
+      "layers": [],
+      "robust_se_method": null
+    },
+    {
+      "net": "merged_60",
+      "desc": "Merged-60",
+      "status": "FAIL:'[30, 31, 32, 33, 34, 35, 36, 37, 38, 39",
+      "bus": 0,
+      "line": 0,
+      "time": 0.95,
+      "gt_count": 0,
+      "det_rule": 0,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 0,
+      "det_robust": 0,
+      "det_outlier": 0,
+      "det_stale": 0,
+      "det_param": 0,
+      "det_load": 0,
+      "det_rpf": 0,
+      "det_comm": 0,
+      "det_vc": 0,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 0,
+      "det_total": 0,
+      "recall": 0,
+      "precision": 0,
+      "f1": 0,
+      "per_type": {},
+      "layers": [],
+      "robust_se_method": null
+    },
+    {
+      "net": "large_1200",
+      "desc": "Large-1200",
+      "status": "FAIL:invalid value encountered in divide",
+      "bus": 0,
+      "line": 0,
+      "time": 1.32,
+      "gt_count": 0,
+      "det_rule": 0,
+      "det_se": 0,
+      "det_gnn": 0,
+      "det_signal": 0,
+      "det_telemetry": 0,
+      "det_robust": 0,
+      "det_outlier": 0,
+      "det_stale": 0,
+      "det_param": 0,
+      "det_load": 0,
+      "det_rpf": 0,
+      "det_comm": 0,
+      "det_vc": 0,
+      "det_ghost": 0,
+      "det_dup": 0,
+      "det_prot": 0,
+      "det_total": 0,
+      "recall": 0,
+      "precision": 0,
+      "f1": 0,
+      "per_type": {},
+      "layers": [],
+      "robust_se_method": null
+    }
+  ],
+  "version": "v8.0",
+  "anomaly_types": [
+    "topo_interrupt",
+    "virtual_faulty",
+    "model_mismatch",
+    "telemetry_mismatch",
+    "signal_mismatch",
+    "measurement_outlier",
+    "stale_data",
+    "parameter_error",
+    "load_shift",
+    "reverse_power_flow",
+    "communication_loss",
+    "voltage_collapse",
+    "ghost_topology",
+    "duplicate_measurement",
+    "protection_misconfig"
+  ],
+  "network_count": 33,
+  "new_types_added": 10,
+  "new_networks_added": 3
+}

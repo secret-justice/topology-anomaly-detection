@@ -1,0 +1,475 @@
+{
+  "experiment": "hard_anomaly_v1",
+  "description": "Hard anomalies designed for layer-specific detection",
+  "anomaly_types": {
+    "rule_only": {
+      "description": "Structural anomalies with zero electrical impact",
+      "examples": [
+        "MGM: device type mismatch (breaker vs disconnect) - no voltage effect",
+        "TI: disconnected zero-load component - no voltage deviation",
+        "Orphan bus: bus with no measurements and no connections"
+      ]
+    },
+    "se_only": {
+      "description": "Measurement anomalies invisible to topology",
+      "examples": [
+        "MTI: correlated bias on voltage measurements (systematic offset)",
+        "MTI: gradual drift in measurement calibration",
+        "VFC: electrically equivalent connection swap"
+      ]
+    },
+    "gnn_only": {
+      "description": "Complex patterns requiring learned representations",
+      "examples": [
+        "Multi-bus correlated anomalies (2-3 buses simultaneously)",
+        "Anomaly patterns that look normal locally but are abnormal globally",
+        "Subtle impedance parameter errors affecting power flow distribution"
+      ]
+    }
+  },
+  "case9": {
+    "n_bus": 9,
+    "n_line": 9,
+    "pf_success": true,
+    "n_anomalies": 6,
+    "rule_only": 0,
+    "se_only": 3,
+    "gnn_only": 3,
+    "anomalies": [
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          7,
+          1,
+          5
+        ],
+        "bias_pu": 0.02467983561008608,
+        "description": "Correlated 2.5% voltage bias on buses [7, 1, 5]",
+        "voltage_impact": 0.02467983561008608,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          0,
+          5,
+          6
+        ],
+        "bias_pu": 0.02002336297523043,
+        "description": "Correlated 2.0% voltage bias on buses [0, 5, 6]",
+        "voltage_impact": 0.02002336297523043,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          5,
+          2,
+          7
+        ],
+        "bias_pu": 0.03574323980775168,
+        "description": "Correlated 3.6% voltage bias on buses [5, 2, 7]",
+        "voltage_impact": 0.03574323980775168,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          1,
+          5
+        ],
+        "description": "Correlated anomaly on buses [1, 5] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          7,
+          2
+        ],
+        "description": "Correlated anomaly on buses [7, 2] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          0,
+          5
+        ],
+        "description": "Correlated anomaly on buses [0, 5] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      }
+    ]
+  },
+  "case33bw": {
+    "n_bus": 33,
+    "n_line": 37,
+    "pf_success": true,
+    "n_anomalies": 6,
+    "rule_only": 0,
+    "se_only": 3,
+    "gnn_only": 3,
+    "anomalies": [
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          27,
+          0,
+          19
+        ],
+        "bias_pu": 0.028428035290621424,
+        "description": "Correlated 2.8% voltage bias on buses [27, 0, 19]",
+        "voltage_impact": 0.028428035290621424,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          5,
+          13,
+          19
+        ],
+        "bias_pu": 0.04006523757990822,
+        "description": "Correlated 4.0% voltage bias on buses [5, 13, 19]",
+        "voltage_impact": 0.04006523757990822,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          5,
+          1,
+          16
+        ],
+        "bias_pu": 0.037965963994656085,
+        "description": "Correlated 3.8% voltage bias on buses [5, 1, 16]",
+        "voltage_impact": 0.037965963994656085,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          29,
+          13
+        ],
+        "description": "Correlated anomaly on buses [29, 13] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          13,
+          8
+        ],
+        "description": "Correlated anomaly on buses [13, 8] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          31,
+          4
+        ],
+        "description": "Correlated anomaly on buses [31, 4] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      }
+    ]
+  },
+  "case57": {
+    "n_bus": 57,
+    "n_line": 63,
+    "pf_success": true,
+    "n_anomalies": 6,
+    "rule_only": 0,
+    "se_only": 3,
+    "gnn_only": 3,
+    "anomalies": [
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          5,
+          22,
+          12
+        ],
+        "bias_pu": 0.027956071030451765,
+        "description": "Correlated 2.8% voltage bias on buses [5, 22, 12]",
+        "voltage_impact": 0.027956071030451765,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          41,
+          39,
+          15
+        ],
+        "bias_pu": 0.03658459930723723,
+        "description": "Correlated 3.7% voltage bias on buses [41, 39, 15]",
+        "voltage_impact": 0.03658459930723723,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          42,
+          47,
+          50
+        ],
+        "bias_pu": 0.03548901044903586,
+        "description": "Correlated 3.5% voltage bias on buses [42, 47, 50]",
+        "voltage_impact": 0.03548901044903586,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          52,
+          7
+        ],
+        "description": "Correlated anomaly on buses [52, 7] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          21,
+          22
+        ],
+        "description": "Correlated anomaly on buses [21, 22] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          50,
+          7
+        ],
+        "description": "Correlated anomaly on buses [50, 7] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      }
+    ]
+  },
+  "case118": {
+    "n_bus": 118,
+    "n_line": 173,
+    "pf_success": true,
+    "n_anomalies": 6,
+    "rule_only": 0,
+    "se_only": 3,
+    "gnn_only": 3,
+    "anomalies": [
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          71,
+          62,
+          1
+        ],
+        "bias_pu": 0.04467611728769507,
+        "description": "Correlated 4.5% voltage bias on buses [71, 62, 1]",
+        "voltage_impact": 0.04467611728769507,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          30,
+          19,
+          57
+        ],
+        "bias_pu": 0.04622952814563251,
+        "description": "Correlated 4.6% voltage bias on buses [30, 19, 57]",
+        "voltage_impact": 0.04622952814563251,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          28,
+          30,
+          68
+        ],
+        "bias_pu": 0.03193566797137225,
+        "description": "Correlated 3.2% voltage bias on buses [28, 30, 68]",
+        "voltage_impact": 0.03193566797137225,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          26,
+          41
+        ],
+        "description": "Correlated anomaly on buses [26, 41] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          34,
+          29
+        ],
+        "description": "Correlated anomaly on buses [34, 29] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          5,
+          40
+        ],
+        "description": "Correlated anomaly on buses [5, 40] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      }
+    ]
+  },
+  "case300": {
+    "n_bus": 300,
+    "n_line": 283,
+    "pf_success": true,
+    "n_anomalies": 6,
+    "rule_only": 0,
+    "se_only": 3,
+    "gnn_only": 3,
+    "anomalies": [
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          295,
+          125,
+          20
+        ],
+        "bias_pu": 0.028441728817325804,
+        "description": "Correlated 2.8% voltage bias on buses [295, 125, 20]",
+        "voltage_impact": 0.028441728817325804,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          182,
+          77,
+          66
+        ],
+        "bias_pu": 0.04882341654460931,
+        "description": "Correlated 4.9% voltage bias on buses [182, 77, 66]",
+        "voltage_impact": 0.04882341654460931,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "MTI_correlated_bias",
+        "buses": [
+          276,
+          208,
+          209
+        ],
+        "bias_pu": 0.038329429665529755,
+        "description": "Correlated 3.8% voltage bias on buses [276, 208, 209]",
+        "voltage_impact": 0.038329429665529755,
+        "detected_by_rule": false,
+        "detected_by_se": true,
+        "detected_by_gnn": false
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          156,
+          86
+        ],
+        "description": "Correlated anomaly on buses [156, 86] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          141,
+          266
+        ],
+        "description": "Correlated anomaly on buses [141, 266] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      },
+      {
+        "type": "correlated_multi_bus",
+        "buses": [
+          107,
+          77
+        ],
+        "description": "Correlated anomaly on buses [107, 77] - normal locally, abnormal pattern",
+        "voltage_impact": 0.01,
+        "detected_by_rule": false,
+        "detected_by_se": false,
+        "detected_by_gnn": true
+      }
+    ]
+  }
+}

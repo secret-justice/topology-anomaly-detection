@@ -1,0 +1,25 @@
+﻿version: "3.8"
+
+services:
+  topo-detection:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./output:/app/output
+      - ../03_数据集:/app/03_数据集
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+  # 可选: Nginx 反向代理 + 静态文件服务
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ../05_可视化界面:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - topo-detection
+    restart: unless-stopped

@@ -1,0 +1,348 @@
+{
+  "experiment": "hard_anomaly_ablation",
+  "description": "Hard anomalies designed for layer-specific detection",
+  "per_network": {
+    "case9": {
+      "Full (3-layer)": {
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "f1": 0.7272727272727272,
+        "detected": 4,
+        "true_positives": 4,
+        "false_positives": 1
+      },
+      "w/o Rule": {
+        "recall": 0.8333333333333334,
+        "precision": 0.8333333333333334,
+        "f1": 0.8333333333333334,
+        "detected": 5,
+        "true_positives": 5,
+        "false_positives": 1
+      },
+      "w/o SE": {
+        "recall": 0.16666666666666666,
+        "precision": 1.0,
+        "f1": 0.2857142857142857,
+        "detected": 1,
+        "true_positives": 1,
+        "false_positives": 0
+      },
+      "w/o GNN": {
+        "recall": 0.5,
+        "precision": 0.75,
+        "f1": 0.6,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 1
+      },
+      "Rule-only": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "detected": 0,
+        "true_positives": 0,
+        "false_positives": 0
+      },
+      "SE-only": {
+        "recall": 0.3333333333333333,
+        "precision": 1.0,
+        "f1": 0.5,
+        "detected": 2,
+        "true_positives": 2,
+        "false_positives": 0
+      },
+      "GNN-only": {
+        "recall": 0.16666666666666666,
+        "precision": 1.0,
+        "f1": 0.2857142857142857,
+        "detected": 1,
+        "true_positives": 1,
+        "false_positives": 0
+      }
+    },
+    "case33bw": {
+      "Full (3-layer)": {
+        "recall": 0.5,
+        "precision": 0.75,
+        "f1": 0.6,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 1
+      },
+      "w/o Rule": {
+        "recall": 0.5,
+        "precision": 1.0,
+        "f1": 0.6666666666666666,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 0
+      },
+      "w/o SE": {
+        "recall": 0.16666666666666666,
+        "precision": 1.0,
+        "f1": 0.2857142857142857,
+        "detected": 1,
+        "true_positives": 1,
+        "false_positives": 0
+      },
+      "w/o GNN": {
+        "recall": 0.5,
+        "precision": 0.75,
+        "f1": 0.6,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 1
+      },
+      "Rule-only": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "detected": 0,
+        "true_positives": 0,
+        "false_positives": 0
+      },
+      "SE-only": {
+        "recall": 0.3333333333333333,
+        "precision": 1.0,
+        "f1": 0.5,
+        "detected": 2,
+        "true_positives": 2,
+        "false_positives": 0
+      },
+      "GNN-only": {
+        "recall": 0.16666666666666666,
+        "precision": 1.0,
+        "f1": 0.2857142857142857,
+        "detected": 1,
+        "true_positives": 1,
+        "false_positives": 0
+      }
+    },
+    "case57": {
+      "Full (3-layer)": {
+        "recall": 0.5,
+        "precision": 0.75,
+        "f1": 0.6,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 1
+      },
+      "w/o Rule": {
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "f1": 0.7272727272727272,
+        "detected": 4,
+        "true_positives": 4,
+        "false_positives": 1
+      },
+      "w/o SE": {
+        "recall": 0.16666666666666666,
+        "precision": 1.0,
+        "f1": 0.2857142857142857,
+        "detected": 1,
+        "true_positives": 1,
+        "false_positives": 0
+      },
+      "w/o GNN": {
+        "recall": 0.5,
+        "precision": 0.75,
+        "f1": 0.6,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 1
+      },
+      "Rule-only": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "detected": 0,
+        "true_positives": 0,
+        "false_positives": 0
+      },
+      "SE-only": {
+        "recall": 0.3333333333333333,
+        "precision": 1.0,
+        "f1": 0.5,
+        "detected": 2,
+        "true_positives": 2,
+        "false_positives": 0
+      },
+      "GNN-only": {
+        "recall": 0.3333333333333333,
+        "precision": 1.0,
+        "f1": 0.5,
+        "detected": 2,
+        "true_positives": 2,
+        "false_positives": 0
+      }
+    },
+    "case118": {
+      "Full (3-layer)": {
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "f1": 0.7272727272727272,
+        "detected": 4,
+        "true_positives": 4,
+        "false_positives": 1
+      },
+      "w/o Rule": {
+        "recall": 0.5,
+        "precision": 1.0,
+        "f1": 0.6666666666666666,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 0
+      },
+      "w/o SE": {
+        "recall": 0.3333333333333333,
+        "precision": 0.6666666666666666,
+        "f1": 0.4444444444444444,
+        "detected": 2,
+        "true_positives": 2,
+        "false_positives": 1
+      },
+      "w/o GNN": {
+        "recall": 0.5,
+        "precision": 0.75,
+        "f1": 0.6,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 1
+      },
+      "Rule-only": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "detected": 0,
+        "true_positives": 0,
+        "false_positives": 0
+      },
+      "SE-only": {
+        "recall": 0.3333333333333333,
+        "precision": 1.0,
+        "f1": 0.5,
+        "detected": 2,
+        "true_positives": 2,
+        "false_positives": 0
+      },
+      "GNN-only": {
+        "recall": 0.3333333333333333,
+        "precision": 1.0,
+        "f1": 0.5,
+        "detected": 2,
+        "true_positives": 2,
+        "false_positives": 0
+      }
+    },
+    "case300": {
+      "Full (3-layer)": {
+        "recall": 0.5,
+        "precision": 0.75,
+        "f1": 0.6,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 1
+      },
+      "w/o Rule": {
+        "recall": 0.6666666666666666,
+        "precision": 0.8,
+        "f1": 0.7272727272727272,
+        "detected": 4,
+        "true_positives": 4,
+        "false_positives": 1
+      },
+      "w/o SE": {
+        "recall": 0.16666666666666666,
+        "precision": 1.0,
+        "f1": 0.2857142857142857,
+        "detected": 1,
+        "true_positives": 1,
+        "false_positives": 0
+      },
+      "w/o GNN": {
+        "recall": 0.3333333333333333,
+        "precision": 0.6666666666666666,
+        "f1": 0.4444444444444444,
+        "detected": 2,
+        "true_positives": 2,
+        "false_positives": 1
+      },
+      "Rule-only": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0,
+        "detected": 0,
+        "true_positives": 0,
+        "false_positives": 0
+      },
+      "SE-only": {
+        "recall": 0.5,
+        "precision": 1.0,
+        "f1": 0.6666666666666666,
+        "detected": 3,
+        "true_positives": 3,
+        "false_positives": 0
+      },
+      "GNN-only": {
+        "recall": 0.3333333333333333,
+        "precision": 1.0,
+        "f1": 0.5,
+        "detected": 2,
+        "true_positives": 2,
+        "false_positives": 0
+      }
+    }
+  },
+  "averaged": {
+    "Full (3-layer)": {
+      "recall_mean": 0.5666666666666667,
+      "recall_std": 0.08164965809277258,
+      "precision_mean": 0.7699999999999999,
+      "f1_mean": 0.6509090909090909,
+      "f1_std": 0.06235064799811723
+    },
+    "w/o Rule": {
+      "recall_mean": 0.6333333333333333,
+      "recall_std": 0.12472191289246473,
+      "precision_mean": 0.8866666666666667,
+      "f1_mean": 0.7242424242424241,
+      "f1_std": 0.06090833709770239
+    },
+    "w/o SE": {
+      "recall_mean": 0.19999999999999998,
+      "recall_std": 0.06666666666666667,
+      "precision_mean": 0.9333333333333332,
+      "f1_mean": 0.3174603174603174,
+      "f1_std": 0.06349206349206349
+    },
+    "w/o GNN": {
+      "recall_mean": 0.4666666666666667,
+      "recall_std": 0.06666666666666668,
+      "precision_mean": 0.7333333333333333,
+      "f1_mean": 0.5688888888888888,
+      "f1_std": 0.06222222222222222
+    },
+    "Rule-only": {
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_mean": 0.0,
+      "f1_mean": 0.0,
+      "f1_std": 0.0
+    },
+    "SE-only": {
+      "recall_mean": 0.36666666666666664,
+      "recall_std": 0.06666666666666668,
+      "precision_mean": 1.0,
+      "f1_mean": 0.5333333333333333,
+      "f1_std": 0.06666666666666665
+    },
+    "GNN-only": {
+      "recall_mean": 0.26666666666666666,
+      "recall_std": 0.0816496580927726,
+      "precision_mean": 1.0,
+      "f1_mean": 0.41428571428571426,
+      "f1_std": 0.10497813183356479
+    }
+  },
+  "key_finding": "Unlike standard anomalies, hard anomalies show layer-specific detection"
+}
