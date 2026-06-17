@@ -1,4 +1,4 @@
-# Hybrid Intelligence for Topology Anomaly Detection and Correction in Power Distribution Networks
+﻿# Hybrid Intelligence for Topology Anomaly Detection and Correction in Power Distribution Networks
 
 This repository contains the source code, trained models, and experimental data for the paper:
 
@@ -12,29 +12,29 @@ We propose a three-layer hybrid intelligence framework that integrates symbolic 
 ## Repository Structure
 
 ```
-├── paper/                  # LaTeX source and figures
-│   ├── main.tex           # Paper source
-│   ├── ref.bib            # Bibliography (63 references)
-│   ├── figures/           # All figures (PDF + PNG)
-│   └── FCS_Highlights_3pages.pptx
-├── src/                   # Source code
-│   ├── anomaly_detection/ # Core detection engine
-│   ├── correction_engine/ # Correction logic
-│   ├── data_preprocessing/# Data pipeline
-│   ├── api/               # FastAPI backend
-│   ├── visualization/     # D3.js frontend
-│   ├── utils/             # Utility functions
-│   ├── config.py          # Configuration
-│   └── run_mvp.py         # Main entry point
-├── models/                # Trained GNN models
-│   ├── gnn_model_best.pt  # Best GNN model
-│   ├── gnn_binary_best.pt # Binary classifier
-│   └── gnn_gae_model.pt   # Graph autoencoder
-├── data/
-│   ├── benchmarks/        # Benchmark results (JSON)
-│   └── experiments/       # Paper experiment data
-├── tests/                 # Test suite (pytest)
-└── docs/                  # Documentation
+鈹溾攢鈹€ paper/                  # LaTeX source and figures
+鈹?  鈹溾攢鈹€ main.tex           # Paper source
+鈹?  鈹溾攢鈹€ ref.bib            # Bibliography (63 references)
+鈹?  鈹溾攢鈹€ figures/           # All figures (PDF + PNG)
+鈹?  鈹斺攢鈹€ FCS_Highlights_3pages.pptx
+鈹溾攢鈹€ src/                   # Source code
+鈹?  鈹溾攢鈹€ anomaly_detection/ # Core detection engine
+鈹?  鈹溾攢鈹€ correction_engine/ # Correction logic
+鈹?  鈹溾攢鈹€ data_preprocessing/# Data pipeline
+鈹?  鈹溾攢鈹€ api/               # FastAPI backend
+鈹?  鈹溾攢鈹€ visualization/     # D3.js frontend
+鈹?  鈹溾攢鈹€ utils/             # Utility functions
+鈹?  鈹溾攢鈹€ config.py          # Configuration
+鈹?  鈹斺攢鈹€ run_mvp.py         # Main entry point
+鈹溾攢鈹€ models/                # Trained GNN models
+鈹?  鈹溾攢鈹€ gnn_model_best.pt  # Best GNN model
+鈹?  鈹溾攢鈹€ gnn_binary_best.pt # Binary classifier
+鈹?  鈹斺攢鈹€ gnn_gae_model.pt   # Graph autoencoder
+鈹溾攢鈹€ data/
+鈹?  鈹溾攢鈹€ benchmarks/        # Benchmark results (JSON)
+鈹?  鈹斺攢鈹€ experiments/       # Paper experiment data
+鈹溾攢鈹€ tests/                 # Test suite (pytest)
+鈹斺攢鈹€ docs/                  # Documentation
 ```
 
 ## Quick Start
@@ -55,8 +55,8 @@ pytest tests/ -v
 | Metric | Value |
 |--------|-------|
 | Global anomaly recall | 78.1% (83.5% with improved GNN) |
-| Network-level recall | 99.4% ± 0.5% |
-| Per-type recall (TI/MTC/SMC) | ≥ 95% |
+| Network-level recall | 99.4% 卤 0.5% |
+| Per-type recall (TI/MTC/SMC) | 鈮?95% |
 | Average processing time | 0.94 s |
 | Test networks | 30 (3--1,888 buses) |
 
@@ -73,7 +73,7 @@ pytest tests/ -v
 ```bibtex
 @article{topology_anomaly_2026,
   title={Hybrid Intelligence for Topology Anomaly Detection and Correction in Power Distribution Networks},
-  author={[Authors]},
+  author={Hanbo Wang},
   journal={Frontiers of Computer Science},
   year={2026}
 }
@@ -82,3 +82,4 @@ pytest tests/ -v
 ## License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
+
