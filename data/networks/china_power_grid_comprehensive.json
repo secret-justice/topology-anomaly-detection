@@ -1,0 +1,702 @@
+{
+  "uhv_ac_1000kv": [
+    {
+      "name": "晋东南-南阳-荆门",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 654,
+      "capacity_mw": 5000,
+      "year": 2009,
+      "from": "山西",
+      "to": "湖北"
+    },
+    {
+      "name": "皖电东送(淮南-浙北-上海)",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 649,
+      "capacity_mw": 6000,
+      "year": 2013,
+      "from": "安徽",
+      "to": "上海"
+    },
+    {
+      "name": "锡盟-山东",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 730,
+      "capacity_mw": 6000,
+      "year": 2016,
+      "from": "内蒙古",
+      "to": "山东"
+    },
+    {
+      "name": "蒙西-天津南",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 608,
+      "capacity_mw": 6000,
+      "year": 2016,
+      "from": "内蒙古",
+      "to": "天津"
+    },
+    {
+      "name": "苏通GIL综合管廊",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 5,
+      "capacity_mw": 6000,
+      "year": 2019,
+      "from": "江苏",
+      "to": "江苏"
+    },
+    {
+      "name": "张北-雄安",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 320,
+      "capacity_mw": 6000,
+      "year": 2020,
+      "from": "河北",
+      "to": "河北"
+    },
+    {
+      "name": "南阳-荆门-长沙",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 637,
+      "capacity_mw": 6000,
+      "year": 2022,
+      "from": "河南",
+      "to": "湖南"
+    },
+    {
+      "name": "大同-天津南",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 480,
+      "capacity_mw": 6000,
+      "year": 2024,
+      "from": "山西",
+      "to": "天津"
+    }
+  ],
+  "uhv_dc_800kv": [
+    {
+      "name": "云南-广东",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1438,
+      "capacity_mw": 5000,
+      "year": 2010,
+      "from": "云南",
+      "to": "广东"
+    },
+    {
+      "name": "向家坝-上海",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1907,
+      "capacity_mw": 6400,
+      "year": 2010,
+      "from": "四川",
+      "to": "上海"
+    },
+    {
+      "name": "锦屏-苏南",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2059,
+      "capacity_mw": 7200,
+      "year": 2012,
+      "from": "四川",
+      "to": "江苏"
+    },
+    {
+      "name": "哈密南-郑州",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2210,
+      "capacity_mw": 8000,
+      "year": 2014,
+      "from": "新疆",
+      "to": "河南"
+    },
+    {
+      "name": "溪洛渡左岸-浙江金华",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1688,
+      "capacity_mw": 8000,
+      "year": 2014,
+      "from": "四川",
+      "to": "浙江"
+    },
+    {
+      "name": "宁东-浙江",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1700,
+      "capacity_mw": 8000,
+      "year": 2016,
+      "from": "宁夏",
+      "to": "浙江"
+    },
+    {
+      "name": "酒泉-湖南",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2383,
+      "capacity_mw": 8000,
+      "year": 2017,
+      "from": "甘肃",
+      "to": "湖南"
+    },
+    {
+      "name": "锡盟-泰州",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1620,
+      "capacity_mw": 10000,
+      "year": 2017,
+      "from": "内蒙古",
+      "to": "江苏"
+    },
+    {
+      "name": "扎鲁特-青州",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1200,
+      "capacity_mw": 10000,
+      "year": 2017,
+      "from": "内蒙古",
+      "to": "山东"
+    },
+    {
+      "name": "上海庙-山东",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1238,
+      "capacity_mw": 10000,
+      "year": 2018,
+      "from": "内蒙古",
+      "to": "山东"
+    },
+    {
+      "name": "雅中-江西",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1701,
+      "capacity_mw": 8000,
+      "year": 2021,
+      "from": "四川",
+      "to": "江西"
+    },
+    {
+      "name": "白鹤滩-江苏",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2087,
+      "capacity_mw": 8000,
+      "year": 2022,
+      "from": "四川",
+      "to": "江苏"
+    },
+    {
+      "name": "白鹤滩-浙江",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2140,
+      "capacity_mw": 8000,
+      "year": 2022,
+      "from": "四川",
+      "to": "浙江"
+    },
+    {
+      "name": "陇东-山东",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1200,
+      "capacity_mw": 8000,
+      "year": 2023,
+      "from": "甘肃",
+      "to": "山东"
+    },
+    {
+      "name": "金上-湖北",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1850,
+      "capacity_mw": 8000,
+      "year": 2024,
+      "from": "四川",
+      "to": "湖北"
+    },
+    {
+      "name": "哈密-重庆",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2300,
+      "capacity_mw": 8000,
+      "year": 2024,
+      "from": "新疆",
+      "to": "重庆"
+    }
+  ],
+  "uhv_dc_1100kv": [
+    {
+      "name": "昌吉-古泉",
+      "voltage": 1100,
+      "type": "uhv_dc",
+      "length_km": 3293,
+      "capacity_mw": 12000,
+      "year": 2019,
+      "from": "新疆",
+      "to": "安徽"
+    }
+  ],
+  "provinces": {
+    "上海": {
+      "uhv_lines": 2,
+      "total_capacity_mw": 12400,
+      "total_length_km": 2556,
+      "connected_to": [
+        "四川",
+        "安徽"
+      ]
+    },
+    "云南": {
+      "uhv_lines": 1,
+      "total_capacity_mw": 5000,
+      "total_length_km": 1438,
+      "connected_to": [
+        "广东"
+      ]
+    },
+    "内蒙古": {
+      "uhv_lines": 5,
+      "total_capacity_mw": 42000,
+      "total_length_km": 5396,
+      "connected_to": [
+        "山东",
+        "江苏",
+        "天津"
+      ]
+    },
+    "四川": {
+      "uhv_lines": 7,
+      "total_capacity_mw": 53600,
+      "total_length_km": 13432,
+      "connected_to": [
+        "江苏",
+        "江西",
+        "浙江",
+        "湖北",
+        "上海"
+      ]
+    },
+    "天津": {
+      "uhv_lines": 2,
+      "total_capacity_mw": 12000,
+      "total_length_km": 1088,
+      "connected_to": [
+        "内蒙古",
+        "山西"
+      ]
+    },
+    "宁夏": {
+      "uhv_lines": 1,
+      "total_capacity_mw": 8000,
+      "total_length_km": 1700,
+      "connected_to": [
+        "浙江"
+      ]
+    },
+    "安徽": {
+      "uhv_lines": 2,
+      "total_capacity_mw": 18000,
+      "total_length_km": 3942,
+      "connected_to": [
+        "新疆",
+        "上海"
+      ]
+    },
+    "山东": {
+      "uhv_lines": 4,
+      "total_capacity_mw": 34000,
+      "total_length_km": 4368,
+      "connected_to": [
+        "内蒙古",
+        "甘肃"
+      ]
+    },
+    "山西": {
+      "uhv_lines": 2,
+      "total_capacity_mw": 11000,
+      "total_length_km": 1134,
+      "connected_to": [
+        "天津",
+        "湖北"
+      ]
+    },
+    "广东": {
+      "uhv_lines": 1,
+      "total_capacity_mw": 5000,
+      "total_length_km": 1438,
+      "connected_to": [
+        "云南"
+      ]
+    },
+    "新疆": {
+      "uhv_lines": 3,
+      "total_capacity_mw": 28000,
+      "total_length_km": 7803,
+      "connected_to": [
+        "河南",
+        "重庆",
+        "安徽"
+      ]
+    },
+    "江苏": {
+      "uhv_lines": 4,
+      "total_capacity_mw": 31200,
+      "total_length_km": 5771,
+      "connected_to": [
+        "四川",
+        "江苏",
+        "内蒙古"
+      ]
+    },
+    "江西": {
+      "uhv_lines": 1,
+      "total_capacity_mw": 8000,
+      "total_length_km": 1701,
+      "connected_to": [
+        "四川"
+      ]
+    },
+    "河北": {
+      "uhv_lines": 1,
+      "total_capacity_mw": 6000,
+      "total_length_km": 320,
+      "connected_to": [
+        "河北"
+      ]
+    },
+    "河南": {
+      "uhv_lines": 2,
+      "total_capacity_mw": 14000,
+      "total_length_km": 2847,
+      "connected_to": [
+        "新疆",
+        "湖南"
+      ]
+    },
+    "浙江": {
+      "uhv_lines": 3,
+      "total_capacity_mw": 24000,
+      "total_length_km": 5528,
+      "connected_to": [
+        "四川",
+        "宁夏"
+      ]
+    },
+    "湖北": {
+      "uhv_lines": 2,
+      "total_capacity_mw": 13000,
+      "total_length_km": 2504,
+      "connected_to": [
+        "四川",
+        "山西"
+      ]
+    },
+    "湖南": {
+      "uhv_lines": 2,
+      "total_capacity_mw": 14000,
+      "total_length_km": 3020,
+      "connected_to": [
+        "河南",
+        "甘肃"
+      ]
+    },
+    "甘肃": {
+      "uhv_lines": 2,
+      "total_capacity_mw": 16000,
+      "total_length_km": 3583,
+      "connected_to": [
+        "山东",
+        "湖南"
+      ]
+    },
+    "重庆": {
+      "uhv_lines": 1,
+      "total_capacity_mw": 8000,
+      "total_length_km": 2300,
+      "connected_to": [
+        "新疆"
+      ]
+    }
+  },
+  "routes": [
+    {
+      "name": "晋东南-南阳-荆门",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 654,
+      "capacity_mw": 5000,
+      "year": 2009,
+      "from": "山西",
+      "to": "湖北"
+    },
+    {
+      "name": "云南-广东",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1438,
+      "capacity_mw": 5000,
+      "year": 2010,
+      "from": "云南",
+      "to": "广东"
+    },
+    {
+      "name": "向家坝-上海",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1907,
+      "capacity_mw": 6400,
+      "year": 2010,
+      "from": "四川",
+      "to": "上海"
+    },
+    {
+      "name": "锦屏-苏南",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2059,
+      "capacity_mw": 7200,
+      "year": 2012,
+      "from": "四川",
+      "to": "江苏"
+    },
+    {
+      "name": "皖电东送(淮南-浙北-上海)",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 649,
+      "capacity_mw": 6000,
+      "year": 2013,
+      "from": "安徽",
+      "to": "上海"
+    },
+    {
+      "name": "哈密南-郑州",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2210,
+      "capacity_mw": 8000,
+      "year": 2014,
+      "from": "新疆",
+      "to": "河南"
+    },
+    {
+      "name": "溪洛渡左岸-浙江金华",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1688,
+      "capacity_mw": 8000,
+      "year": 2014,
+      "from": "四川",
+      "to": "浙江"
+    },
+    {
+      "name": "宁东-浙江",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1700,
+      "capacity_mw": 8000,
+      "year": 2016,
+      "from": "宁夏",
+      "to": "浙江"
+    },
+    {
+      "name": "锡盟-山东",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 730,
+      "capacity_mw": 6000,
+      "year": 2016,
+      "from": "内蒙古",
+      "to": "山东"
+    },
+    {
+      "name": "蒙西-天津南",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 608,
+      "capacity_mw": 6000,
+      "year": 2016,
+      "from": "内蒙古",
+      "to": "天津"
+    },
+    {
+      "name": "酒泉-湖南",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2383,
+      "capacity_mw": 8000,
+      "year": 2017,
+      "from": "甘肃",
+      "to": "湖南"
+    },
+    {
+      "name": "锡盟-泰州",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1620,
+      "capacity_mw": 10000,
+      "year": 2017,
+      "from": "内蒙古",
+      "to": "江苏"
+    },
+    {
+      "name": "扎鲁特-青州",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1200,
+      "capacity_mw": 10000,
+      "year": 2017,
+      "from": "内蒙古",
+      "to": "山东"
+    },
+    {
+      "name": "上海庙-山东",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1238,
+      "capacity_mw": 10000,
+      "year": 2018,
+      "from": "内蒙古",
+      "to": "山东"
+    },
+    {
+      "name": "昌吉-古泉",
+      "voltage": 1100,
+      "type": "uhv_dc",
+      "length_km": 3293,
+      "capacity_mw": 12000,
+      "year": 2019,
+      "from": "新疆",
+      "to": "安徽"
+    },
+    {
+      "name": "苏通GIL综合管廊",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 5,
+      "capacity_mw": 6000,
+      "year": 2019,
+      "from": "江苏",
+      "to": "江苏"
+    },
+    {
+      "name": "张北-雄安",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 320,
+      "capacity_mw": 6000,
+      "year": 2020,
+      "from": "河北",
+      "to": "河北"
+    },
+    {
+      "name": "雅中-江西",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1701,
+      "capacity_mw": 8000,
+      "year": 2021,
+      "from": "四川",
+      "to": "江西"
+    },
+    {
+      "name": "白鹤滩-江苏",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2087,
+      "capacity_mw": 8000,
+      "year": 2022,
+      "from": "四川",
+      "to": "江苏"
+    },
+    {
+      "name": "白鹤滩-浙江",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2140,
+      "capacity_mw": 8000,
+      "year": 2022,
+      "from": "四川",
+      "to": "浙江"
+    },
+    {
+      "name": "南阳-荆门-长沙",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 637,
+      "capacity_mw": 6000,
+      "year": 2022,
+      "from": "河南",
+      "to": "湖南"
+    },
+    {
+      "name": "陇东-山东",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1200,
+      "capacity_mw": 8000,
+      "year": 2023,
+      "from": "甘肃",
+      "to": "山东"
+    },
+    {
+      "name": "金上-湖北",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 1850,
+      "capacity_mw": 8000,
+      "year": 2024,
+      "from": "四川",
+      "to": "湖北"
+    },
+    {
+      "name": "哈密-重庆",
+      "voltage": 800,
+      "type": "uhv_dc",
+      "length_km": 2300,
+      "capacity_mw": 8000,
+      "year": 2024,
+      "from": "新疆",
+      "to": "重庆"
+    },
+    {
+      "name": "大同-天津南",
+      "voltage": 1000,
+      "type": "uhv_ac",
+      "length_km": 480,
+      "capacity_mw": 6000,
+      "year": 2024,
+      "from": "山西",
+      "to": "天津"
+    }
+  ],
+  "statistics": {
+    "total_provinces": 20,
+    "total_uhv_lines": 25,
+    "ac_1000kv": 8,
+    "dc_800kv": 16,
+    "dc_1100kv": 1,
+    "total_capacity_gw": 187.6,
+    "total_length_km": 36097,
+    "year_range": "2009-2024"
+  }
+}

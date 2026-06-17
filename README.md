@@ -68,6 +68,17 @@ pytest tests/ -v
 - [CIGRE Benchmark Systems](https://www.cigre.org/)
 - Chinese distribution network models (14 models)
 
+
+## Data
+
+### Included Datasets
+- **Chinese 10kV Distribution Networks**: 14 models covering urban, suburban, rural, industrial, and DER-integrated configurations. See [`data/networks/`](data/networks/).
+- **Benchmark Results**: Complete experimental results for RQ1-RQ9. See [`data/experiments/`](data/experiments/).
+- **Trained Models**: GNN model weights (.pt format). See [`models/`](models/).
+
+### External Datasets
+PandaPower (97 built-in networks), SimBench (123 networks), IEEE PES test feeders, and CIGRE test networks are publicly available. See [`data/README.md`](data/README.md) for details.
+
 ## Citation
 
 ```bibtex
@@ -82,4 +93,5 @@ pytest tests/ -v
 ## License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
+
 
