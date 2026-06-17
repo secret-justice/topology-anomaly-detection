@@ -1,0 +1,212 @@
+[
+  {
+    "name": "China_CBD_Commercial",
+    "n_bus": 84,
+    "n_line": 81,
+    "n_load": 80,
+    "n_gen": 5,
+    "n_edges": 86,
+    "rule_dets": 1,
+    "pf_ok": true,
+    "time": 0.001,
+    "vm_range": [
+      1.02,
+      1.0451
+    ]
+  },
+  {
+    "name": "China_Hospital_District",
+    "n_bus": 34,
+    "n_line": 31,
+    "n_load": 30,
+    "n_gen": 3,
+    "n_edges": 36,
+    "rule_dets": 1,
+    "pf_ok": true,
+    "time": 0.001,
+    "vm_range": [
+      1.02,
+      1.0574
+    ]
+  },
+  {
+    "name": "China_Industrial_Park",
+    "n_bus": 58,
+    "n_line": 49,
+    "n_load": 54,
+    "n_gen": 5,
+    "n_edges": 60,
+    "rule_dets": 1,
+    "pf_ok": true,
+    "time": 0.0,
+    "vm_range": [
+      1.02,
+      1.0441
+    ]
+  },
+  {
+    "name": "China_Residential_High",
+    "n_bus": 60,
+    "n_line": 57,
+    "n_load": 56,
+    "n_gen": 6,
+    "n_edges": 62,
+    "rule_dets": 1,
+    "pf_ok": true,
+    "time": 0.001,
+    "vm_range": [
+      1.02,
+      1.0571
+    ]
+  },
+  {
+    "name": "China_Rural_Overhead",
+    "n_bus": 18,
+    "n_line": 15,
+    "n_load": 16,
+    "n_gen": 2,
+    "n_edges": 17,
+    "rule_dets": 0,
+    "pf_ok": true,
+    "time": 0.0,
+    "vm_range": [
+      1.02,
+      1.0682
+    ]
+  },
+  {
+    "name": "China_University_Campus",
+    "n_bus": 19,
+    "n_line": 16,
+    "n_load": 17,
+    "n_gen": 3,
+    "n_edges": 18,
+    "rule_dets": 0,
+    "pf_ok": true,
+    "time": 0.0,
+    "vm_range": [
+      1.02,
+      1.058
+    ]
+  },
+  {
+    "name": "China_Data_Center",
+    "n_bus": 36,
+    "n_line": 33,
+    "n_load": 32,
+    "n_gen": 4,
+    "n_edges": 38,
+    "rule_dets": 1,
+    "pf_ok": true,
+    "time": 0.001,
+    "vm_range": [
+      1.02,
+      1.0496
+    ]
+  },
+  {
+    "name": "China_Township",
+    "n_bus": 51,
+    "n_line": 41,
+    "n_load": 47,
+    "n_gen": 4,
+    "n_edges": 53,
+    "rule_dets": 1,
+    "pf_ok": true,
+    "time": 0.002,
+    "vm_range": [
+      1.02,
+      1.0641
+    ]
+  },
+  {
+    "name": "China_10kV_CityUrban",
+    "n_bus": 32,
+    "n_line": 22,
+    "n_load": 24,
+    "n_gen": 0,
+    "n_edges": 32,
+    "rule_dets": 2,
+    "pf_ok": true,
+    "time": 0.0,
+    "vm_range": [
+      1.0,
+      1.0496
+    ]
+  },
+  {
+    "name": "China_10kV_CitySuburban",
+    "n_bus": 32,
+    "n_line": 22,
+    "n_load": 24,
+    "n_gen": 0,
+    "n_edges": 32,
+    "rule_dets": 2,
+    "pf_ok": true,
+    "time": 0.001,
+    "vm_range": [
+      1.0,
+      1.0496
+    ]
+  },
+  {
+    "name": "China_10kV_Rural",
+    "n_bus": 32,
+    "n_line": 22,
+    "n_load": 24,
+    "n_gen": 0,
+    "n_edges": 32,
+    "rule_dets": 2,
+    "pf_ok": true,
+    "time": 0.0,
+    "vm_range": [
+      1.0,
+      1.0496
+    ]
+  },
+  {
+    "name": "China_New_Energy_Park",
+    "n_bus": 53,
+    "n_line": 49,
+    "n_load": 49,
+    "n_gen": 12,
+    "n_edges": 55,
+    "rule_dets": 1,
+    "pf_ok": true,
+    "time": 0.001,
+    "vm_range": [
+      1.02,
+      1.0588
+    ]
+  },
+  {
+    "name": "China_Suburban_Mixed",
+    "n_bus": 66,
+    "n_line": 61,
+    "n_load": 62,
+    "n_gen": 5,
+    "n_edges": 68,
+    "rule_dets": 1,
+    "pf_ok": true,
+    "time": 0.001,
+    "vm_range": [
+      1.02,
+      1.0597
+    ]
+  },
+  {
+    "name": "China_Large_110_10kV_DER",
+    "n_bus": 57,
+    "n_line": 52,
+    "n_load": 53,
+    "n_gen": 9,
+    "n_edges": 59,
+    "rule_dets": 1,
+    "pf_ok": true,
+    "time": 0.0,
+    "vm_range": [
+      1.02,
+      1.063
+    ]
+  }
+]
