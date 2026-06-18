@@ -1443,7 +1443,20 @@ Four directions warrant investigation: (i)~three-phase unbalanced state estimati
 \fontsize{8.5pt}{10pt}\selectfont
 
 \section*{Data Availability}
-The experimental data, including all benchmark results (JSON), trained GNN models (.pt), and visualization outputs, are available at\\\texttt{https://github.com/secret-justice/topology-anomaly-detection}. All experiments are reproducible with fixed random seeds (42--46) and documented hyperparameters. The test networks use publicly available datasets: PandaPower~\cite{pandapower2018}, SimBench~\cite{simbench2020}, CIGRE~\cite{cigre_mv2014}, and IEEE standard feeders~\cite{ieee13bus1991}.
+The source code, trained GNN models, and all experimental results (JSON) are publicly available at:
+\begin{center}
+\texttt{https://github.com/secret-justice/topology-anomaly-detection}
+\end{center}
+All experiments are reproducible with fixed random seeds (42--46) and documented hyperparameters.
+
+The following publicly available datasets were used in this study:
+\begin{itemize}
+\item \textbf{PandaPower}~\cite{pandapower2018}: open-source power system analysis tool with 43 built-in standard networks. Install via \texttt{pip install pandapower}; documentation at \texttt{https://pandapower.org}.
+\item \textbf{SimBench}~\cite{simbench2020}: 123 German MV/LV/EHV/HV network models with embedded time-series load profiles. Available at \texttt{https://simbench.de/en/}.
+\item \textbf{CIGRE}~\cite{cigre_mv2014}: CIGRE MV and LV benchmark test networks, included in PandaPower.
+\item \textbf{IEEE Standard Feeders}~\cite{ieee13bus1991}: IEEE 13/34/123/8500-bus test feeders. Available through OpenDSS (\texttt{https://www.epri.com/pages/sa/opendss}) and PandaPower.
+\item \textbf{OPSD}~\cite{opsd2020}: Open Power System Data---hourly electricity load, generation, and price data from ENTSO-E Transparency Platform. Freely available at \texttt{https://open-power-system-data.org}.
+\end{itemize}
 
 \bibliographystyle{fcs}
 \bibliography{ref}
