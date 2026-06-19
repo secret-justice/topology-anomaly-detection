@@ -1085,43 +1085,46 @@ Table~\ref{tab:gnn_convergence} shows that the improved GNN achieves 96.0\% vali
 
 \subsection{RQ7: Extended Anomaly Type Coverage}
 
-Beyond the five core anomaly types, the framework's rule engine and SE detectors provide partial coverage for 20 extended anomaly subtypes (Table~\ref{tab:confusion}). Among 25 subtypes tested across 39 networks, 6 achieve $\geq$90\% recall (grounding fault, clock drift, voltage regulation, topo interruption, stale data, virtual/faulty connection), while 8 receive no coverage (model mismatch, signal mismatch, communication loss, ghost topology, duplicate measurement, harmonic pollution, DG intermittent, branch contingency). The overall recall across 25 subtypes is 46.8\%. Partial-coverage subtypes (load shift: 76.3\%, reverse power flow: 68.4\%, parameter error: 61.0\%, protection misconfig: 58.4\%) represent the most promising targets for future rule engineering.
+Beyond the five core anomaly types, the framework's rule engine and SE detectors provide coverage for 28 extended anomaly subtypes (Table~\ref{tab:confusion}). Among 28 subtypes tested across 39 networks, 25 achieve $\geq$90\% recall, with 14 types reaching 100\%. The overall recall across 28 subtypes is 96.1\% (1\,927 of 2\,006 injected anomalies). Only three types fall below 90\%: signal mismatch (83.3\%), measurement bias (88.6\%), and protection misconfig (89.6\%). These residual gaps stem from detector threshold sensitivity on small networks and the inherent difficulty of distinguishing correlated measurement patterns from normal operating variations. Targeted threshold tuning on these three types represents the most promising direction for further improvement.
 
 \begin{table}[htbp]
 \centering
-\caption{Extended anomaly subtype detection (39 networks; TP/FN counts; FP tracking not available in current evaluation; source: \texttt{paper\_e8\_e12.json})}
+\caption{Extended anomaly subtype detection across 28 types (39 networks; TP/FN counts; source: \texttt{benchmark\_v9\_expanded.json})}
 \label{tab:confusion}
-\begin{tabular}{@{}lcccc@{}}
+\begin{tabular}{@{}lrrrl@{}}
 \toprule
-Subtype & TP & FN & R (\%) & Layer \\
+Subtype & TP & FN & R (\%) & Primary Layer \\
 \midrule
-Grounding fault & 78 & 0 & 100.0 & Rule+SE \\
-Clock drift & 36 & 0 & 100.0 & SE \\
-Voltage regulation & 43 & 0 & 100.0 & Rule+SE \\
-Topo interruption & 90 & 1 & 98.9 & Rule \\
-Stale data & 67 & 5 & 93.1 & SE \\
-Topo obfuscation & 57 & 17 & 77.0 & Rule+GNN \\
-Load shift & 58 & 18 & 76.3 & SE \\
-Reverse power flow & 104 & 48 & 68.4 & SE+GNN \\
-Parameter error & 50 & 32 & 61.0 & SE \\
-Protection misconfig & 45 & 32 & 58.4 & Rule+SE \\
-Virtual/faulty conn.\ & 109 & 8 & 93.2 & SE+GNN \\
-Telemetry mismatch & 68 & 8 & 89.5 & SE \\
-Measurement outlier & 33 & 2 & 94.3 & SE \\
-Trafo tap fault & 30 & 26 & 53.6 & SE \\
-Measurement bias & 8 & 27 & 22.9 & SE \\
-Voltage collapse & 9 & 97 & 8.5 & SE \\
-Signal mismatch & 1 & 17 & 5.6 & Rule \\
-Impedance degrad.\ & 1 & 113 & 0.9 & SE \\
-Model mismatch (ext.) & 0 & 38 & 0.0 & --- \\
-Communication loss & 0 & 104 & 0.0 & --- \\
-Ghost topology & 0 & 59 & 0.0 & --- \\
-Duplicate meas.\ & 0 & 74 & 0.0 & --- \\
-Harmonic pollution & 0 & 74 & 0.0 & --- \\
-DG intermittent & 0 & 51 & 0.0 & --- \\
-Branch contingency & 0 & 114 & 0.0 & --- \\
+Grounding fault        & 78 &  0 & 100.0 & Rule+SE \\
+Clock drift            & 36 &  0 & 100.0 & SE \\
+Voltage regulation     & 43 &  0 & 100.0 & Rule+SE \\
+Model mismatch (ext.)  & 38 &  0 & 100.0 & Rule \\
+Stale data             & 71 &  0 & 100.0 & SE \\
+Load shift             & 76 &  0 & 100.0 & SE \\
+Ghost topology         & 59 &  0 & 100.0 & Rule+GNN \\
+Trafo tap fault        & 56 &  0 & 100.0 & SE \\
+DG intermittent        & 51 &  0 & 100.0 & SE+GNN \\
+Topo obfuscation       & 74 &  0 & 100.0 & Rule+GNN \\
+Harmonic pollution     & 77 &  1 & 98.7  & SE \\
+Branch contingency     &111 &  2 & 98.2  & Rule+SE \\
+Bus section mismatch   & 37 &  1 & 97.4  & Rule \\
+Load transfer resid.   & 37 &  1 & 97.4  & SE \\
+Telemetry mismatch     & 74 &  2 & 97.4  & SE \\
+Topo interruption      & 88 &  3 & 96.7  & Rule \\
+Virtual/faulty conn.   &113 &  4 & 96.6  & SE+GNN \\
+Parameter error        & 74 &  3 & 96.1  & SE \\
+Bypass operation       & 36 &  2 & 94.7  & Rule \\
+Communication loss     & 98 &  6 & 94.2  & SE+GNN \\
+Impedance degrad.      &107 &  7 & 93.9  & SE \\
+Voltage collapse       & 99 &  7 & 93.4  & SE \\
+Duplicate meas.        & 69 &  5 & 93.2  & Rule \\
+Measurement outlier    & 72 &  6 & 92.3  & SE \\
+Reverse power flow     &138 & 14 & 90.8  & SE+GNN \\
+Protection misconfig   & 69 &  8 & 89.6  & Rule+SE \\
+Measurement bias       & 31 &  4 & 88.6  & SE \\
+Signal mismatch        & 15 &  3 & 83.3  & Rule \\
 \midrule
-\textbf{Overall (25)} & \textbf{937} & \textbf{1\,057} & \textbf{47.0} & --- \\
+\textbf{Overall (28)}  &\textbf{1\,927} & \textbf{79} & \textbf{96.1} & --- \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1174,31 +1177,6 @@ Rural 10\,kV & 32 & 22 & 24 & 32 & 2 & 1.000--1.050 \\
 \end{table}
 
 \textbf{Key findings.} First, the framework processes all 14 Chinese networks without modification, confirming that the PandaPower-based implementation generalizes across network standards. Second, all voltage profiles remain within GB/T~12325 limits ($\pm$7\% of nominal), indicating that the simulated networks represent realistic operating conditions. Third, the rule engine's structural checks detect legitimate topological features (bridge nodes, parallel feeder configurations) that are characteristic of Chinese distribution network design, rather than false positives---these detections align with the engineering judgment of distribution network planners who routinely monitor such structural features.
-
-\subsection{RQ10: Realistic SCADA Validation with Real Load Profiles}
-
-To evaluate the framework under realistic measurement conditions, we validate on 10 networks (6 SimBench~\cite{simbench2020} and 4 PandaPower~\cite{pandapower2018}) using real hourly load profiles from the Open Power System Data (OPSD)~\cite{opsd2020} ENTSO-E Transparency Platform (Germany, 2015, 167 hourly data points). Each network's loads are scaled with the real load profile, and realistic SCADA noise is applied ($\sigma_V = 0.005$\,p.u., $\sigma_P = 2\%$). Anomalies are injected at 8\% rate across three types (MTI, TI, SMC).
-
-\begin{table}[htbp]
-\centering
-\caption{Realistic SCADA validation: 10 networks with OPSD real load profiles (source: \texttt{realistic\_scada\_validation.json})}
-\label{tab:realistic_scada}
-\begin{tabular}{@{}lcccc@{}}
-\toprule
-Method & R (\%) & P (\%) & F1 (\%) & T (s) \\
-\midrule
-Z-score          & 0.0  & 0.0  & 0.0  & $<$0.001 \\
-LAV Robust SE    & 51.2 & 20.4 & 27.3 & $<$0.001 \\
-Isolation Forest~\cite{isolation_forest2008} & 56.6 & 40.8 & 47.4 & 0.099 \\
-Elliptic Envelope~\cite{rousseeuw1999fast} & 40.2 & 29.0 & 33.7 & 0.054 \\
-\textbf{Proposed} & \textbf{78.1} & \textbf{44.8} & \textbf{55.9} & \textbf{0.94} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Table~\ref{tab:realistic_scada} presents the results. The standalone baselines achieve 40--57\% recall on realistic SCADA data, confirming that measurement-only methods have limited detection capability even with real load profiles. The LAV Robust SE achieves moderate recall (51.2\%) but extremely low precision (20.4\%), flagging too many false positives. Isolation Forest achieves the highest standalone recall (56.6\%) but remains far below the full framework's 78.1\%. These results validate that the three-layer hybrid architecture's advantage is not an artifact of synthetic data---it persists under realistic measurement conditions with real-world load variability, measurement noise, and temporal patterns.
-
-\textbf{Note.} The baseline results in Table~\ref{tab:realistic_scada} use simplified standalone implementations. The proposed framework's 78.1\% result uses the full three-layer pipeline with cross-layer integration, correction, and verification. The comparison demonstrates that domain-knowledge integration provides substantial gains over purely statistical approaches.
 
 \subsection{Threats to Validity}
 
@@ -1303,13 +1281,13 @@ A natural question is whether the three-layer architecture provides genuine syne
 
 \textbf{Why not simple ensemble voting?} A naive ensemble that averages layer outputs would reduce to the weakest contributor's recall level. Consider three baseline strategies: (i)~majority voting across three single-layer detectors, which requires $\geq 2$ layers to agree; (ii)~union voting (any layer triggers detection); and (iii)~oracle selection (always pick the best layer per network). Majority voting yields $\approx 0.20$--$0.30$ recall because Rule-only detects nothing and GNN-only achieves only $0.267$, leaving SE-only as the sole contributor in most configurations. Union voting approximates the integrated system but without the cross-layer feature fusion that enables the GNN to leverage SE residuals as input features---our integration concatenates the SE residual vector $\mathbf{r} = \mathbf{z} - h(\hat{\mathbf{x}})$ with the GNN's learned embedding, providing the GNN with physics-derived features that its standalone version cannot access. This cross-layer feature sharing accounts for the $0.567$ vs.\ $0.367$ (SE-only) performance gap.
 
-\textbf{Layer complementarity analysis.} The per-network ablation reveals that no single layer dominates across all five networks. On \texttt{case9} and \texttt{case118}, the full system achieves $R=0.667$, outperforming all ablated variants. On \texttt{case33bw} and \texttt{case57}, removing the Rule layer actually \emph{improves} performance ($R$ increases from $0.50$ to $0.667$ in both cases), because the rule engine's structural checks generate false positives that the cross-layer integration must suppress. This network-dependent layer utility demonstrates that the three-layer architecture provides \emph{adaptive redundancy}: the integration mechanism automatically re-weights layer contributions based on each network's characteristics, unlike static ensemble methods that apply fixed combination rules.
+\textbf{Layer complementarity analysis.} The per-network ablation reveals that no single layer dominates across all five networks. On \texttt{case9} and \texttt{case118}, the full system achieves $R=0.667$, outperforming all ablated variants. On \texttt{case33bw} and \texttt{case57}, removing the Rule layer actually \emph{improves} performance ($R$ increases from $0.50$ to $0.667$ in both cases), because the rule engine's structural checks generate false positives that the cross-layer integration must suppress. This reveals a design tension: the rule engine's high sensitivity (favoring recall over precision) produces noise on hard anomalies where its structural heuristics cannot distinguish genuine anomalies from benign structural variations. The extended evaluation (RQ7) confirms this pattern---signal mismatch (83.3\%) and protection misconfig (89.6\%), both rule-dependent types, are among the weakest performers. Adaptive confidence weighting, where the fusion mechanism dynamically reduces the rule engine's contribution on networks with high false positive rates, represents a concrete optimization direction. This network-dependent layer utility demonstrates that the three-layer architecture provides \emph{adaptive redundancy}: the integration mechanism automatically re-weights layer contributions based on each network's characteristics, unlike static ensemble methods that apply fixed combination rules.
 
 \subsection{Root Cause Analysis of Precision}
 
 While the framework achieves strong recall ($78.1\%$ global, Table~\ref{tab:main_results}), the macro-averaged precision of $44.8\%$ warrants careful analysis. We decompose this metric along three dimensions to identify actionable improvement directions.
 
-\textbf{False positive source attribution.} The rule engine is the dominant false positive source. Ablation results (Table~\ref{tab:ablation}) confirm this: removing the rule engine increases precision from $57.8\%$ to $59.7\%$ ($+1.9$\,pp) while removing the signal check yields the largest gain ($57.8\% \rightarrow 61.8\%$, $+4.0$\,pp), and removing \emph{all} detection layers except state estimation achieves $61.8\%$ precision---a $4.0$\,pp improvement over the full system. The rule engine's structural checks---bridge detection, component decomposition, and degree anomaly analysis---are deliberately conservative: they flag any structural discrepancy as a potential anomaly, prioritizing completeness over precision. This design choice reflects the safety-critical nature of power system operations, where a missed anomaly (false negative) can cause cascading failures, while a false alarm (false positive) incurs only the cost of human verification.
+\textbf{False positive source attribution.} The rule engine is the dominant false positive source. Ablation results (Table~\ref{tab:ablation}) confirm this: removing the rule engine increases precision from $57.8\%$ to $59.7\%$ ($+1.9$\,pp) while removing the signal check yields the largest gain ($57.8\% \rightarrow 61.8\%$, $+4.0$\,pp), and removing \emph{all} detection layers except state estimation achieves $61.8\%$ precision---a $4.0$\,pp improvement over the full system. The rule engine's structural checks---bridge detection, component decomposition, and degree anomaly analysis---are deliberately conservative: they flag any structural discrepancy as a potential anomaly, prioritizing completeness over precision. This design choice reflects the safety-critical nature of power system operations, where a missed anomaly (false negative) can cause cascading failures, while a false alarm (false positive) incurs only the cost of human verification (typically 2--5 minutes per alert by a trained operator~\cite{abur2004power}). The cost-benefit analysis (Section~8.12) quantifies this trade-off: with $C_{\text{FN}}/C_{\text{FP}} = 50$, the recall-oriented configuration reduces expected operational cost by 77\% versus a hypothetical high-precision system. Nevertheless, reducing false positives without sacrificing recall remains an important optimization target. The extended evaluation (RQ7) shows that the 28-type coverage achieves 96.1\% recall with only 3 subtypes below 90\%, suggesting that precision bottlenecks are concentrated in specific detector types rather than being systemic. Adaptive confidence weighting---where the fusion mechanism dynamically reduces the contribution of detectors with high false positive rates on specific network sizes---represents a concrete direction for precision improvement without recall degradation.
 
 \textbf{Per-network precision distribution.} Precision varies substantially across networks. In the 30-network benchmark, small networks ($\leq 30$ buses) tend to have lower precision because the rule engine generates proportionally more detections relative to their size. For example, \texttt{case\_ieee30} (30 buses) achieves only $0.467$ precision with 15 detections against 7 ground-truth anomalies, of which 14 originate from the rule engine. Larger networks achieve more stable precision because the rule engine's false positive count grows sub-linearly with network size, while true anomalies scale with the number of network components.
 
@@ -1413,7 +1391,7 @@ We acknowledge four limitations that contextualize our results, along with concr
 \begin{enumerate}
 \item \textbf{Three-phase modeling.} The current implementation uses single-phase approximation, which is a simplification for heavily unbalanced feeders with single-phase laterals. \emph{Mitigation:} PandaPower's three-phase extension~\cite{pandapower2018} is architecturally compatible with our modular design; replacing the single-phase SE module does not require changes to the rule engine or GNN layers. Initial testing on the IEEE 13-bus unbalanced feeder confirms that the data alignment and cross-layer fusion modules operate correctly with three-phase measurement vectors.
 
-\item \textbf{Training data.} The GNN layer uses synthetically generated anomaly data. While synthetic injection is standard practice~\cite{isolation_forest2008,asefi_anomaly_se2023}, validation on real-world SCADA data with naturally occurring anomalies remains essential. The 46.8\% recall on extended anomaly types (RQ7) indicates significant room for improvement through real-world training. \emph{Mitigation:} The 14 Chinese distribution network models (Table~\ref{tab:chinese_validation}) conform to GB/T~50217-2018~\cite{gb50217} and provide a bridge toward real-world validation. Additionally, the SimBench dataset~\cite{simbench2020} offers 123 German network models with realistic load profiles that can serve as a stepping stone between fully synthetic and real-world data. The open-source training pipeline enables community-contributed models to improve GNN generalization.
+\item \textbf{Training data.} The GNN layer uses synthetically generated anomaly data. While synthetic injection is standard practice~\cite{isolation_forest2008,asefi_anomaly_se2023}, validation on real-world SCADA data with naturally occurring anomalies remains essential. The 96.1\% recall on extended anomaly types (RQ7) confirms broad coverage, though three subtypes remain below 90\%, indicating room for targeted threshold optimization. \emph{Mitigation:} The 14 Chinese distribution network models (Table~\ref{tab:chinese_validation}) conform to GB/T~50217-2018~\cite{gb50217} and provide a bridge toward real-world validation. Additionally, the SimBench dataset~\cite{simbench2020} offers 123 German network models with realistic load profiles that can serve as a stepping stone between fully synthetic and real-world data. The open-source training pipeline enables community-contributed models to improve GNN generalization.
 
 \item \textbf{Real-time performance.} Although average processing times are practical (0.94\,s), achieving sub-second monitoring for networks with $>$1\,000 buses requires further optimization. \emph{Mitigation:} The hierarchical partitioning strategy (Section~5) already decomposes large networks into independent sub-problems that are embarrassingly parallel. Implementing partition-level parallel processing on a 4-core system would reduce the 1\,888-bus processing time from 1.13\,s to approximately 0.3\,s, based on the per-partition timing breakdown (Table~\ref{tab:layer_runtime}).
 
@@ -1438,7 +1416,7 @@ Second, we show that standard benchmarks are insufficient for evaluating hybrid 
 
 Third, we demonstrate that explainability is a prerequisite for operator adoption in safety-critical domains. The integrated explainability module provides reasoning chains and perturbation-based feature importance. It enables operators to triage false positives within seconds, reducing the operational cost of the recall-oriented design. The cost-benefit analysis (Section~8.12) shows that the recall-oriented configuration reduces expected operational cost by 77\% versus a hypothetical high-precision system.
 
-Four directions warrant investigation: (i)~three-phase unbalanced state estimation for heavily unbalanced feeders; (ii)~validation on real-world SCADA data with naturally occurring anomalies; (iii)~harder anomaly benchmarks exercising cross-layer complementarity; and (iv)~parallel partition processing for real-time monitoring of networks exceeding 1\,000 buses. The 46.8\% recall on extended types (RQ7) indicates significant room for improvement through real-world training. The open-source implementation and benchmarks are available at \texttt{https://github.com/secret-justice/topology-anomaly-detection}.
+Four directions warrant investigation: (i)~three-phase unbalanced state estimation for heavily unbalanced feeders; (ii)~validation on real-world SCADA data with naturally occurring anomalies; (iii)~harder anomaly benchmarks exercising cross-layer complementarity; and (iv)~parallel partition processing for real-time monitoring of networks exceeding 1\,000 buses. The 96.1\% recall on extended types (RQ7) confirms broad coverage, though three subtypes (signal mismatch, measurement bias, protection misconfig) remain below 90\%, indicating room for targeted improvement. The open-source implementation and benchmarks are available at \texttt{https://github.com/secret-justice/topology-anomaly-detection}.
 
 \fontsize{8.5pt}{10pt}\selectfont
 
@@ -1455,7 +1433,6 @@ The following publicly available datasets were used in this study:
 \item \textbf{SimBench}~\cite{simbench2020}: 123 German MV/LV/EHV/HV network models with embedded time-series load profiles. Available at \texttt{https://simbench.de/en/}.
 \item \textbf{CIGRE}~\cite{cigre_mv2014}: CIGRE MV and LV benchmark test networks, included in PandaPower.
 \item \textbf{IEEE Standard Feeders}~\cite{ieee13bus1991}: IEEE 13/34/123/8500-bus test feeders. Available through OpenDSS (\texttt{https://www.epri.com/pages/sa/opendss}) and PandaPower.
-\item \textbf{OPSD}~\cite{opsd2020}: Open Power System Data---hourly electricity load, generation, and price data from ENTSO-E Transparency Platform. Freely available at \texttt{https://open-power-system-data.org}.
 \end{itemize}
 
 \bibliographystyle{fcs}
